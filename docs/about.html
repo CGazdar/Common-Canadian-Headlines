@@ -75,10 +75,20 @@ padding:6px 9px;font-size:13px;display:none;box-shadow:0 2px 8px rgba(0,0,0,.15)
 :root{--mapbg:#f1f0eb;--mapfill:#ffffff;--mapline:#111111;--maplabel:#1d1d1b}
 :root[data-theme=dark]{--mapbg:#05090d;--mapfill:#0f141b;--mapline:#e5685a;--maplabel:#d5dee6}
 :root{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+
+.nav .dd{position:relative}
+.nav .ddbtn{margin:0 0 -1px 0;padding:12px 12px;font-size:inherit;color:var(--mute);background:none;border:0;border-bottom:2px solid transparent;border-radius:0;cursor:pointer}
+.nav .ddbtn:hover,.nav .dd.open .ddbtn{color:var(--fg)}
+.nav .ddbtn[aria-current=page]{color:var(--fg);font-weight:600;border-bottom-color:var(--fg)}
+.nav .ddmenu{display:none;position:absolute;top:100%;left:0;min-width:190px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.18);padding:6px;z-index:30}
+.nav .dd.open .ddmenu,.nav .dd:hover .ddmenu{display:block}
+.nav .ddmenu a{display:block;padding:8px 10px;border-radius:6px;color:var(--fg);text-decoration:none;font-size:14px}
+.nav .ddmenu a:hover{background:var(--nodata)}
+.nav .ddmenu a[aria-current=page]{font-weight:600}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="in"><a class="brand" href="index.html">Common Canadian Headliners</a><a class="tab" href="index.html">Map</a><a class="tab" href="province.html">Provinces</a><a class="tab" href="about.html" aria-current="page">About</a><a class="tab" href="data.html">Data</a><button id="themebtn" type="button" aria-label="Switch between light and dark mode">Dark mode</button></div></nav>
+<nav class="nav"><div class="in"><a class="brand" href="index.html">Common Canadian Headliners</a><a class="tab" href="index.html">Map</a><a class="tab" href="province.html">Provinces</a><a class="tab" href="about.html" aria-current="page">About</a><div class="dd"><button class="ddbtn" type="button" aria-haspopup="true" aria-expanded="false">Data ▾</button><div class="ddmenu"><a href="data.html">Data Downloads</a><a href="sources.html">Sources</a></div></div><button id="themebtn" type="button" aria-label="Switch between light and dark mode">Dark mode</button></div></nav>
 <main>
 <h1>About</h1>
 </main>
@@ -87,6 +97,13 @@ padding:6px 9px;font-size:13px;display:none;box-shadow:0 2px 8px rgba(0,0,0,.15)
 function label(){b.textContent=document.documentElement.dataset.theme==="dark"?"☀ Light mode":"☾ Dark mode"}
 label();
 b.addEventListener("click",function(){var t=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}label();if(window.onTheme)window.onTheme()})})();
+</script>
+<script>
+(function(){var d=document.querySelector(".nav .dd");if(!d)return;var b=d.querySelector(".ddbtn");
+function set(o){d.classList.toggle("open",o);b.setAttribute("aria-expanded",o)}
+b.addEventListener("click",function(e){e.stopPropagation();set(!d.classList.contains("open"))});
+document.addEventListener("click",function(e){if(!d.contains(e.target))set(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false)})})();
 </script>
 </body>
 </html>

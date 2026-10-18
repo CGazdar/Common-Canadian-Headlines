@@ -23,7 +23,7 @@ bay
 waterloo
 sudbury
 nova
-scotia
+scotia  
 region
 calgary
 edmonton

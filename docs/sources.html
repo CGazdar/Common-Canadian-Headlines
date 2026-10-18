@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources · Common Canadian Headliners</title>
+<script>(function(){var t=null;try{t=localStorage.getItem("theme")}catch(e){}if(!t)t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";document.documentElement.dataset.theme=t})()</script>
+<style>
+:root{--bg:#fafaf8;--fg:#1d1d1b;--mute:#6b6b66;--card:#fff;--line:#dcdcd6;--nodata:#ecebe6;
+--left:#c0392b;--center:#7a7a7a;--right:#2a6fb0;--ramp0:#eaf2f8;--ramp1:#1b4f7a;}
+:root[data-theme="dark"]{--bg:#161615;--fg:#ececea;--mute:#9a9a94;--card:#1f1f1d;--line:#3a3a36;
+--nodata:#262624;--left:#e5685a;--center:#a0a0a0;--right:#5aa0e0;--ramp0:#1f2b36;--ramp1:#7cc0f0;}
+*{box-sizing:border-box}
+.nav{border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:20}
+.nav .in{max-width:980px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav .brand{font-weight:700;margin-right:auto;padding:12px 0;color:var(--fg);text-decoration:none}
+.nav a.tab{color:var(--mute);text-decoration:none;padding:12px 12px;border-bottom:2px solid transparent;margin-bottom:-1px}
+.nav a.tab:hover{color:var(--fg)}
+.nav a.tab[aria-current=page]{color:var(--fg);font-weight:600;border-bottom-color:var(--fg)}
+
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:var(--mute);margin:0 0 18px;max-width:62ch}
+.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:14px}
+select,button{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 10px}
+button.on{border-color:var(--fg)}
+.slider{flex:1;min-width:220px;display:flex;align-items:center;gap:10px}
+.slider input{flex:1}
+.q{font-variant-numeric:tabular-nums;min-width:6.5em}
+.grid{display:grid;grid-template-columns:minmax(320px,1.25fr) 1fr;gap:20px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.card h2{font-size:14px;margin:0 0 8px;color:var(--mute);font-weight:600}
+svg text{fill:var(--fg);font-family:inherit}
+.prov{stroke:var(--card);stroke-width:.8;stroke-linejoin:round;cursor:pointer}
+.prov.nodata{cursor:default}.prov.sel{stroke:var(--fg);stroke-width:2.2}
+.plabel{font-size:11px;font-weight:600;text-anchor:middle;pointer-events:none}
+.cardhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}
+.cardhead h2{margin:0}
+#natbtn{font-size:13px;padding:4px 10px;border-radius:999px}
+#natbtn.on{border-color:var(--fg);font-weight:600}
+.ramp{height:8px;border-radius:4px;background:linear-gradient(to right,var(--ramp0),var(--ramp1));border:1px solid var(--line)}
+.rampl{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-top:3px}
+.seg{display:inline-flex;gap:10px}
+.leg2{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--mute)}.leg2 i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1px solid var(--line)}
+.pagelink{font-size:14px}.pagelink a{color:var(--fg);font-weight:600}
+.termpick{position:relative}
+#tpanel{position:absolute;z-index:10;top:calc(100% + 6px);left:0;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px;min-width:250px;max-height:340px;overflow:auto;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+#tpanel[hidden]{display:none}
+#tpanel label{display:flex;gap:8px;align-items:center;padding:4px 6px;border-radius:5px;cursor:pointer;font-size:14px}
+#tpanel label:hover{background:var(--nodata)}
+#tpanel .clear{margin-top:6px;font-size:13px;width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px;min-height:8px}
+.chip{display:inline-flex;border:1px solid var(--line);border-radius:999px;background:var(--card);overflow:hidden}
+.chip button{border:0;border-radius:0;background:none;padding:3px 10px;font-size:13px}
+.chip button.x{padding:3px 9px 3px 2px;color:var(--mute)}
+.chip.on{border-color:var(--fg)}.chip.on .nm{font-weight:600}
+.hint{font-size:12px;color:var(--mute)}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.charts.n0 .card,.charts.n1 .card,.charts .pagelink{grid-column:1/-1}
+@media(max-width:760px){.charts{grid-template-columns:1fr}}
+.mapcard #map{max-height:72vh}
+.dot{stroke:var(--card);stroke-width:1.4;cursor:pointer}.dot:hover{stroke:var(--fg);stroke-width:1.8}
+.cardhead .btns{display:flex;gap:8px;flex-wrap:wrap}
+button.tog[aria-pressed=false]{color:var(--mute)}
+.empty{color:var(--mute);margin:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;margin-top:8px}
+.sw{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:5px}
+.note{color:var(--mute);font-size:13px;margin-top:14px;max-width:80ch}
+#tip{position:fixed;pointer-events:none;background:var(--card);border:1px solid var(--line);border-radius:6px;
+padding:6px 9px;font-size:13px;display:none;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:5}
+.nav button{font:inherit;font-size:13px;padding:5px 10px;margin-left:6px;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;cursor:pointer}
+.nav button.tog[aria-pressed=false]{color:var(--mute)}
+:root{--mapbg:#f1f0eb;--mapfill:#ffffff;--mapline:#111111;--maplabel:#1d1d1b}
+:root[data-theme=dark]{--mapbg:#05090d;--mapfill:#0f141b;--mapline:#e5685a;--maplabel:#d5dee6}
+:root{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+.dl{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:6px 0 26px}
+.dlbtn{display:inline-block;background:var(--fg);color:var(--bg);text-decoration:none;font-weight:600;padding:10px 16px;border-radius:8px}
+.dlbtn:hover{opacity:.88}
+.meta{margin:0;color:var(--mute);font-size:14px}
+.sec{font-size:17px;margin:0 0 10px}
+.cols{border-collapse:collapse;width:100%;font-size:14px}
+.cols th,.cols td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.cols td:first-child{font-family:ui-monospace,Menlo,monospace;font-size:13px;white-space:nowrap}
+.small{color:var(--mute);font-size:13px;max-width:70ch}
+
+.nav .dd{position:relative}
+.nav .ddbtn{margin:0 0 -1px 0;padding:12px 12px;font-size:inherit;color:var(--mute);background:none;border:0;border-bottom:2px solid transparent;border-radius:0;cursor:pointer}
+.nav .ddbtn:hover,.nav .dd.open .ddbtn{color:var(--fg)}
+.nav .ddbtn[aria-current=page]{color:var(--fg);font-weight:600;border-bottom-color:var(--fg)}
+.nav .ddmenu{display:none;position:absolute;top:100%;left:0;min-width:190px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.18);padding:6px;z-index:30}
+.nav .dd.open .ddmenu,.nav .dd:hover .ddmenu{display:block}
+.nav .ddmenu a{display:block;padding:8px 10px;border-radius:6px;color:var(--fg);text-decoration:none;font-size:14px}
+.nav .ddmenu a:hover{background:var(--nodata)}
+.nav .ddmenu a[aria-current=page]{font-weight:600}
+.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:0 0 14px}
+.controls label{display:flex;align-items:center;gap:8px;color:var(--mute);font-size:14px}
+select{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 10px}
+.exnote{color:var(--mute);font-size:13px;margin:4px 0 12px;min-height:1.2em}
+.empty{color:var(--mute);margin:0}
+.exout{border:1px solid var(--line);border-radius:10px;background:var(--card);margin:0 0 10px}
+.exout summary{cursor:pointer;padding:10px 14px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px}
+.exout summary::-webkit-details-marker{display:none}
+.exout summary::before{content:"▸";color:var(--mute);width:1em}
+.exout[open] summary::before{content:"▾"}
+.exout .dotg{width:10px;height:10px;border-radius:50%;flex:none}
+.exout .cnt{margin-left:auto;font-weight:400;color:var(--mute);font-size:13px}
+.exout ul{list-style:none;margin:0;padding:0 14px 8px}
+.exout li{padding:9px 0;border-top:1px solid var(--line)}
+.exout .hl{font-size:15px}
+.exout .src{display:block;font-size:12.5px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.exout a.src:hover{color:var(--fg);text-decoration:underline}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="in"><a class="brand" href="index.html">Common Canadian Headliners</a><a class="tab" href="index.html">Map</a><a class="tab" href="province.html">Provinces</a><a class="tab" href="about.html">About</a><div class="dd"><button class="ddbtn" type="button" aria-haspopup="true" aria-expanded="false" aria-current="page">Data ▾</button><div class="ddmenu"><a href="data.html">Data Downloads</a><a href="sources.html" aria-current="page">Sources</a></div></div><button id="themebtn" type="button" aria-label="Switch between light and dark mode">Dark mode</button></div></nav>
+<main>
+<h1>Sources</h1>
+<p class="sub">Real headlines behind the numbers. Pick a term, a quarter and a place to see a random sample, with a link to each article on the publisher's own site.</p>
+<div class="controls">
+  <label>Term <select id="sterm"></select></label>
+  <label>Quarter <select id="sq"></select></label>
+  <label>Place <select id="sp"></select></label>
+</div>
+<p class="exnote" id="exnote"></p>
+<div id="examples"></div>
+</main>
+<script>
+(function(){var b=document.getElementById("themebtn");if(!b)return;
+function label(){b.textContent=document.documentElement.dataset.theme==="dark"?"☀ Light mode":"☾ Dark mode"}
+label();
+b.addEventListener("click",function(){var t=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}label();if(window.onTheme)window.onTheme()})})();
+</script>
+<script>
+(function(){var d=document.querySelector(".nav .dd");if(!d)return;var b=d.querySelector(".ddbtn");
+function set(o){d.classList.toggle("open",o);b.setAttribute("aria-expanded",o)}
+b.addEventListener("click",function(e){e.stopPropagation();set(!d.classList.contains("open"))});
+document.addEventListener("click",function(e){if(!d.contains(e.target))set(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false)})})();
+</script>
+<script src="data.js"></script>
+<script>
+const D=window.DATA,Q=D.quarters,$=id=>document.getElementById(id);
+const NAMES={NAT:"All of Canada",BC:"British Columbia",AB:"Alberta",SK:"Saskatchewan",MB:"Manitoba",ON:"Ontario",QC:"Quebec",NB:"New Brunswick",NS:"Nova Scotia",PE:"Prince Edward Island",NL:"Newfoundland and Labrador",TER:"Northern Territories"};
+const ORDER=["NAT","BC","AB","SK","MB","ON","QC","NB","NS","PE","NL","TER"];
+const REG={YT:"TER",NT:"TER",NU:"TER"};
+const GROUPCOL={left:"var(--left)",center:"var(--center)",right:"var(--right)"};
+const cap=t=>t.replace(/\b([a-z])/g,m=>m.toUpperCase());
+const slug=t=>t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const params=new URLSearchParams(location.search);
+function opt(sel,val,text,chosen){const o=document.createElement("option");o.value=val;o.textContent=text;if(chosen)o.selected=true;sel.appendChild(o)}
+opt($("sterm"),"","Choose term",!params.get("term"));
+D.terms.slice().sort((a,b)=>a.localeCompare(b)).forEach(t=>opt($("sterm"),t,cap(t),params.get("term")===t));
+Q.slice().reverse().forEach(q=>opt($("sq"),q,q,params.get("q")===q));
+ORDER.forEach(p=>opt($("sp"),p,NAMES[p],params.get("p")===p));
+const cache={};
+function load(t){if(!cache[t])cache[t]=fetch("examples/"+slug(t)+".json").then(r=>r.ok?r.json():null).catch(()=>null);return cache[t]}
+let token=0;
+async function render(){
+  const t=$("sterm").value,q=$("sq").value,p=$("sp").value,box=$("examples"),mine=++token;
+  try{history.replaceState(null,"","?"+new URLSearchParams(t?{term:t,q,p}:{}).toString())}catch(e){}
+  if(!t){$("exnote").textContent="";box.innerHTML='<p class="empty">Choose a term to see example headlines.</p>';return}
+  $("exnote").textContent="A random sample of headlines containing “"+cap(t)+"”. Each link goes to the publisher's own page.";
+  box.innerHTML='<p class="empty">Loading…</p>';
+  const data=await load(t);if(mine!==token)return;
+  box.innerHTML="";
+  const byO=data&&data.quarters[q],order={left:0,center:1,right:2};
+  const inPlace=o=>p==="NAT"||(REG[D.outlets[o].province]||D.outlets[o].province)===p;
+  const outs=Object.keys(D.outlets).filter(o=>inPlace(o)&&byO&&byO[o]&&byO[o].length)
+    .sort((a,b)=>order[D.outlets[a].group]-order[D.outlets[b].group]||D.outlets[a].name.localeCompare(D.outlets[b].name));
+  if(!outs.length){box.innerHTML='<p class="empty">No example headlines for this selection. The outlets may be below the 300-headline minimum that quarter, or none are in the dataset for this place.</p>';return}
+  outs.forEach(o=>{
+    const m=D.outlets[o],det=document.createElement("details");det.className="exout";det.open=outs.length<=3;
+    const sm=document.createElement("summary"),dot=document.createElement("span");
+    dot.className="dotg";dot.style.background=GROUPCOL[m.group];
+    const nm=document.createElement("span");nm.textContent=m.name;
+    const ct=document.createElement("span");ct.className="cnt";ct.textContent=byO[o].length+" shown";
+    sm.append(dot,nm,ct);det.appendChild(sm);
+    const ul=document.createElement("ul");
+    byO[o].forEach(([h,u,d])=>{
+      const li=document.createElement("li"),hd=document.createElement("div");hd.className="hl";hd.textContent=h;
+      const a=document.createElement("a");a.className="src";a.href="https://"+u;a.target="_blank";a.rel="noopener noreferrer";
+      a.textContent=(d?d+" · ":"")+u.replace(/^www\./,"");
+      li.append(hd,a);ul.appendChild(li);
+    });
+    det.appendChild(ul);box.appendChild(det);
+  });
+}
+["sterm","sq","sp"].forEach(id=>$(id).addEventListener("change",render));
+render();
+</script>
+</body>
+</html>
