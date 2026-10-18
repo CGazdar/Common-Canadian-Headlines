@@ -111,18 +111,35 @@ select{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(
 .exout .hl{font-size:15px}
 .exout .src{display:block;font-size:12.5px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .exout a.src:hover{color:var(--fg);text-decoration:underline}
+.adder{display:flex;gap:6px}
+.adder input{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 10px;min-width:210px}
+button{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 12px;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;min-height:6px}
+.chip{display:inline-flex;border:1px solid var(--fg);border-radius:999px;background:var(--card);overflow:hidden}
+.chip span{padding:3px 4px 3px 11px;font-size:13px;font-weight:600}
+.chip button{border:0;border-radius:0;background:none;padding:3px 10px 3px 6px;font-size:13px;color:var(--mute)}
+.qsec{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:0 0 12px}
+.qsec>summary{cursor:pointer;padding:12px 16px;font-weight:700;font-size:16px;list-style:none;display:flex;align-items:baseline;gap:10px}
+.qsec>summary::-webkit-details-marker{display:none}
+.qsec>summary::before{content:"▸";color:var(--mute);width:1em}
+.qsec[open]>summary::before{content:"▾"}
+.qsec .qcount{margin-left:auto;font-weight:400;font-size:13px;color:var(--mute)}
+.qbody{padding:0 12px 4px}
+.qbody .exout{background:var(--bg)}
+.tag{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:999px;padding:0 7px;margin-left:8px;color:var(--mute);vertical-align:1px}
 </style>
 </head>
 <body>
 <nav class="nav"><div class="in"><a class="brand" href="index.html">Common Canadian Headliners</a><a class="tab" href="index.html">Map</a><a class="tab" href="province.html">Provinces</a><a class="tab" href="about.html">About</a><div class="dd"><button class="ddbtn" type="button" aria-haspopup="true" aria-expanded="false" aria-current="page">Data ▾</button><div class="ddmenu"><a href="data.html">Data Downloads</a><a href="sources.html" aria-current="page">Sources</a></div></div><button id="themebtn" type="button" aria-label="Switch between light and dark mode">Dark mode</button></div></nav>
 <main>
 <h1>Sources</h1>
-<p class="sub">Real headlines behind the numbers. Pick a term, a quarter and a place to see a random sample, with a link to each article on the publisher's own site.</p>
+<p class="sub">Real headlines behind the numbers. Add one or more terms to see a random sample of headlines containing them, grouped by quarter and then by news outlet, each with a link to the article on the publisher's own site.</p>
 <div class="controls">
-  <label>Term <select id="sterm"></select></label>
-  <label>Quarter <select id="sq"></select></label>
+  <div class="adder"><input id="tin" list="tlist" placeholder="Add a term…" autocomplete="off" aria-label="Add a term"><datalist id="tlist"></datalist><button id="tadd" type="button">Add</button></div>
   <label>Place <select id="sp"></select></label>
+  <label>Order <select id="so"><option value="new">Newest first</option><option value="old">Oldest first</option></select></label>
 </div>
+<div class="chips" id="schips"></div>
 <p class="exnote" id="exnote"></p>
 <div id="examples"></div>
 </main>
@@ -146,48 +163,96 @@ const NAMES={NAT:"All of Canada",BC:"British Columbia",AB:"Alberta",SK:"Saskatch
 const ORDER=["NAT","BC","AB","SK","MB","ON","QC","NB","NS","PE","NL","TER"];
 const REG={YT:"TER",NT:"TER",NU:"TER"};
 const GROUPCOL={left:"var(--left)",center:"var(--center)",right:"var(--right)"};
+const GRANK={left:0,center:1,right:2};
 const cap=t=>t.replace(/\b([a-z])/g,m=>m.toUpperCase());
 const slug=t=>t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 const params=new URLSearchParams(location.search);
-function opt(sel,val,text,chosen){const o=document.createElement("option");o.value=val;o.textContent=text;if(chosen)o.selected=true;sel.appendChild(o)}
-opt($("sterm"),"","Choose term",!params.get("term"));
-D.terms.slice().sort((a,b)=>a.localeCompare(b)).forEach(t=>opt($("sterm"),t,cap(t),params.get("term")===t));
-Q.slice().reverse().forEach(q=>opt($("sq"),q,q,params.get("q")===q));
-ORDER.forEach(p=>opt($("sp"),p,NAMES[p],params.get("p")===p));
+let terms=(params.get("terms")||"").split(",").filter(t=>D.terms.includes(t));
+let place=ORDER.includes(params.get("p"))?params.get("p"):"NAT",order=params.get("o")==="old"?"old":"new";
+D.terms.slice().sort((a,b)=>a.localeCompare(b)).forEach(t=>{const o=document.createElement("option");o.value=cap(t);$("tlist").appendChild(o)});
+ORDER.forEach(p=>{const o=document.createElement("option");o.value=p;o.textContent=NAMES[p];if(p===place)o.selected=true;$("sp").appendChild(o)});
+$("so").value=order;
+function addTerm(){
+  const v=$("tin").value.trim().toLowerCase(),t=D.terms.find(x=>x===v);
+  if(!t){$("tin").select();return}
+  $("tin").value="";
+  if(!terms.includes(t)){terms.push(t);render()}
+}
+$("tadd").addEventListener("click",addTerm);
+$("tin").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();addTerm()}});
+$("tin").addEventListener("change",addTerm);
+$("sp").addEventListener("change",e=>{place=e.target.value;render()});
+$("so").addEventListener("change",e=>{order=e.target.value;render()});
 const cache={};
 function load(t){if(!cache[t])cache[t]=fetch("examples/"+slug(t)+".json").then(r=>r.ok?r.json():null).catch(()=>null);return cache[t]}
-let token=0;
-async function render(){
-  const t=$("sterm").value,q=$("sq").value,p=$("sp").value,box=$("examples"),mine=++token;
-  try{history.replaceState(null,"","?"+new URLSearchParams(t?{term:t,q,p}:{}).toString())}catch(e){}
-  if(!t){$("exnote").textContent="";box.innerHTML='<p class="empty">Choose a term to see example headlines.</p>';return}
-  $("exnote").textContent="A random sample of headlines containing “"+cap(t)+"”. Each link goes to the publisher's own page.";
-  box.innerHTML='<p class="empty">Loading…</p>';
-  const data=await load(t);if(mine!==token)return;
-  box.innerHTML="";
-  const byO=data&&data.quarters[q],order={left:0,center:1,right:2};
-  const inPlace=o=>p==="NAT"||(REG[D.outlets[o].province]||D.outlets[o].province)===p;
-  const outs=Object.keys(D.outlets).filter(o=>inPlace(o)&&byO&&byO[o]&&byO[o].length)
-    .sort((a,b)=>order[D.outlets[a].group]-order[D.outlets[b].group]||D.outlets[a].name.localeCompare(D.outlets[b].name));
-  if(!outs.length){box.innerHTML='<p class="empty">No example headlines for this selection. The outlets may be below the 300-headline minimum that quarter, or none are in the dataset for this place.</p>';return}
-  outs.forEach(o=>{
-    const m=D.outlets[o],det=document.createElement("details");det.className="exout";det.open=outs.length<=3;
-    const sm=document.createElement("summary"),dot=document.createElement("span");
-    dot.className="dotg";dot.style.background=GROUPCOL[m.group];
-    const nm=document.createElement("span");nm.textContent=m.name;
-    const ct=document.createElement("span");ct.className="cnt";ct.textContent=byO[o].length+" shown";
-    sm.append(dot,nm,ct);det.appendChild(sm);
-    const ul=document.createElement("ul");
-    byO[o].forEach(([h,u,d])=>{
-      const li=document.createElement("li"),hd=document.createElement("div");hd.className="hl";hd.textContent=h;
-      const a=document.createElement("a");a.className="src";a.href="https://"+u;a.target="_blank";a.rel="noopener noreferrer";
-      a.textContent=(d?d+" · ":"")+u.replace(/^www\./,"");
-      li.append(hd,a);ul.appendChild(li);
-    });
-    det.appendChild(ul);box.appendChild(det);
+function drawChips(){
+  const box=$("schips");box.innerHTML="";
+  terms.forEach(t=>{
+    const c=document.createElement("span");c.className="chip";
+    const n=document.createElement("span");n.textContent=cap(t);
+    const x=document.createElement("button");x.type="button";x.textContent="×";x.setAttribute("aria-label","Remove "+cap(t));
+    x.addEventListener("click",()=>{terms=terms.filter(y=>y!==t);render()});
+    c.append(n,x);box.appendChild(c);
   });
 }
-["sterm","sq","sp"].forEach(id=>$(id).addEventListener("change",render));
+const inPlace=o=>place==="NAT"||(REG[D.outlets[o].province]||D.outlets[o].province)===place;
+let token=0;
+async function render(){
+  const mine=++token,box=$("examples");
+  drawChips();
+  try{history.replaceState(null,"","?"+new URLSearchParams(terms.length?{terms:terms.join(","),p:place,o:order}:{}).toString())}catch(e){}
+  if(!terms.length){$("exnote").textContent="";box.innerHTML='<p class="empty">Add a term above to see example headlines. Try “Inflation” or “Carbon Tax”.</p>';return}
+  $("exnote").textContent="Random samples, grouped by quarter and then by news outlet. Each link goes to the publisher's own page.";
+  box.innerHTML='<p class="empty">Loading…</p>';
+  const files=await Promise.all(terms.map(load));
+  if(mine!==token)return;
+  // quarter -> outlet -> url -> {h,u,d,tags}
+  const byQ={};
+  terms.forEach((t,i)=>{
+    const f=files[i];if(!f)return;
+    for(const q in f.quarters)for(const o in f.quarters[q]){
+      if(!D.outlets[o]||!inPlace(o))continue;
+      const oo=(byQ[q]=byQ[q]||{})[o]=byQ[q][o]||{};
+      f.quarters[q][o].forEach(([h,u,d])=>{(oo[u]=oo[u]||{h,u,d,tags:[]}).tags.push(t)});
+    }
+  });
+  const qs=Object.keys(byQ).sort();if(order==="new")qs.reverse();
+  box.innerHTML="";
+  if(!qs.length){box.innerHTML='<p class="empty">No example headlines for these terms in this place. The outlets may be below the 300-headline minimum, or none are in the dataset here.</p>';return}
+  qs.forEach((q,i)=>{
+    const outs=Object.keys(byQ[q]).sort((a,b)=>GRANK[D.outlets[a].group]-GRANK[D.outlets[b].group]||D.outlets[a].name.localeCompare(D.outlets[b].name));
+    const total=outs.reduce((n,o)=>n+Object.keys(byQ[q][o]).length,0);
+    const det=document.createElement("details");det.className="qsec";
+    const sm=document.createElement("summary"),ql=document.createElement("span"),qc=document.createElement("span");
+    ql.textContent=q;qc.className="qcount";qc.textContent=`${outs.length} outlet${outs.length===1?"":"s"} · ${total} headline${total===1?"":"s"}`;
+    sm.append(ql,qc);det.appendChild(sm);
+    let built=false;
+    const build=()=>{
+      if(built)return;built=true;
+      const body=document.createElement("div");body.className="qbody";
+      outs.forEach(o=>{
+        const m=D.outlets[o],items=Object.values(byQ[q][o]).sort((a,b)=>a.d.localeCompare(b.d));
+        const od=document.createElement("details");od.className="exout";od.open=outs.length<=3;
+        const os=document.createElement("summary"),dot=document.createElement("span"),nm=document.createElement("span"),ct=document.createElement("span");
+        dot.className="dotg";dot.style.background=GROUPCOL[m.group];nm.textContent=m.name;ct.className="cnt";ct.textContent=items.length+" shown";
+        os.append(dot,nm,ct);od.appendChild(os);
+        const ul=document.createElement("ul");
+        items.forEach(it=>{
+          const li=document.createElement("li"),hd=document.createElement("div");hd.className="hl";hd.textContent=it.h;
+          if(terms.length>1)it.tags.forEach(t=>{const g=document.createElement("span");g.className="tag";g.textContent=cap(t);hd.appendChild(g)});
+          const a=document.createElement("a");a.className="src";a.href="https://"+it.u;a.target="_blank";a.rel="noopener noreferrer";
+          a.textContent=(it.d?it.d+" · ":"")+it.u.replace(/^www\./,"");
+          li.append(hd,a);ul.appendChild(li);
+        });
+        od.appendChild(ul);body.appendChild(od);
+      });
+      det.appendChild(body);
+    };
+    det.addEventListener("toggle",()=>{if(det.open)build()});
+    if(i===0){det.open=true;build()}
+    box.appendChild(det);
+  });
+}
 render();
 </script>
 </body>
