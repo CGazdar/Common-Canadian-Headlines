@@ -34,7 +34,7 @@ def load_outlets():
     info, skipped = {}, []
     with open(HERE / "outlets.csv", newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            if (r.get("language") or "en").strip() != "en":
+            if (r.get("language") or "en").strip() not in ("en", "fr"):
                 continue
             lean = (r.get("leaning") or "").strip().lower()
             owner = (r.get("owner") or "").strip() or r["outlet_id"]

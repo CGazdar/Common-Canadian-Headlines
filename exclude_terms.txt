@@ -1,39 +1,26 @@
-# site boilerplate
-opinion
-news
-update
-plus
-morning
-live
-photos
-video
-watch
-# places
-ont
-ontario
-toronto
-hamilton
-halifax
-windsor
-winnipeg
-kelowna
-yukon
-thunder
-bay
-waterloo
-sudbury
-nova
-scotia  
-region
-calgary
-edmonton
-ottawa
-vancouver
-regina
-saskatoon
-montreal
-alberta
-manitoba
-saskatchewan
-bc
-quebec
+cat >> exclude_terms.txt <<'EOF'
+nunavut
+niagara
+st
+fort
+lethbridge
+catharines
+st catharines
+sask
+sarnia
+gatineau
+letters
+letter
+editor
+reader
+guest
+column
+editorial
+ideas
+sun
+weather
+updates
+1st
+EOF
+python lean_terms.py
+python export_site_data.py

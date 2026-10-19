@@ -1,0 +1,279 @@
+=== saultstar
+saultstar: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                             933    3425    7517    2095    6684    7206    6900    6493
+opinion                          119     345    1857     598    1835    1678    1519     604
+entertainment                     33     182     727     238     909     981     875     568
+life                              10      79     804     267     778     844     847     866
+press-releases                     0       0       0       0       0       0       0     547
+saultstar                        101      53       0       0       0       0       0       0
+personal-finance                   0       8     143       0       0       0       0       0
+health                             8      11      19      12      28      27       9       2
+community                          0       0       0       0       1      89      12       0
+feature                            0       0       0       0       3      10      52      29
+category                           0       3      40      16       3       3       0      12
+technology                         2       1       2       0       5       9      24       2
+business                           2       3      16       2       6       1       4       2
+uncategorized                      0       0       2       1       6       5       6       6
+city-hall                          0       0       0       0       0       6      15       2
+=== theobserver
+theobserver: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                             899    3018    5953    1983    5479    5649    5601    7269
+opinion                          129     377    1108     341     766     830     626     600
+life                              13      93     785     278     692     699     724    1209
+entertainment                     37     202     268     131     380     308     281     351
+press-releases                     0       0       0       0       0       0       0     556
+business                           4       4      57       8      14      38      29      11
+personal-finance                   0       8     144       0       0       0       0       0
+health                             9      13      16       9      23      18       7       4
+feature                            0       0       0       0      12      38      19      13
+category                           0      24      27       8       3       1       1       5
+chatham-kent-news                  0       0       0       0       0       0       0      66
+livestock                          0       1      13       3       0       5       2       6
+pmn                                0      29       0       0       0       0       0       0
+travel                             8      11       1       0       0       0       0       8
+ottawa-senators                    0       0       0       0       0       0       0      27
+=== simcoereformer
+simcoereformer: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                             945    2790    6825    3231    6017    6035    6053    5715
+life                              12      87     846     468     731     831    1065    1345
+opinion                          110     218    1097     577     812     823     638     401
+entertainment                     14     124     272     217     393     286     286     319
+press-releases                     0       0       0       0       0       0       0     815
+shopping-essentials                0       0       0       0       0     367      52      20
+travel                             1       6       0       0       0       3     112     200
+home-living                        0       0       0       0       0       0      87     134
+personal-finance                   0      11     145       0       0       6       0       0
+business                           2       2      42      12      17      43      36       7
+health                             9      10      18      16      25      19       7       2
+feature                            0       0       0       0      12      40      22      10
+category                           0      22      25       8       3       1       3       8
+chatham-kent-news                  0       0       0       0       0       0       0      70
+gift-guide                         0       0       0       0       0       0      44      20
+=== stcatharinesstandard
+stcatharinesstandard: top URL sections by year
+
+section                         2019    2020    2023    2024    2025    2026
+news                               0    1286    2949   11079   19346   14466
+ts                                 0    8780    6519       0       0       0
+business                           0      94     284    1848    4828    6001
+news-story                      2645    5209       0       0       0       0
+life                               0     210     539    1577    3252    1959
+politics                           0       0     339     821    2149     931
+opinion                            0     159     506     950     853    1022
+entertainment                      0     122     203     605    1161     770
+thestar                            0       0      46      77    1899     734
+whatson-story                    656    1157       0       0       0       0
+things-to-do                       0       0      36     238     366     411
+living-story                     436     400       0       0       0       0
+community-story                  170     479       0       0       0       0
+opinion-story                    114     197       0       0       0       0
+ths                                0     111     120       0       0       0
+=== stratfordbeaconherald
+stratfordbeaconherald: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                             788    2411    5746    1804    5097    5093    5091    3657
+opinion                          111     216    1144     317     767     816     627     315
+life                              11      80     776     244     697     703     719     628
+entertainment                     27     132     272     135     372     285     250     181
+press-releases                     0       0       0       0       0       0       0     552
+stratford                        152      74       0       0       0       0       0       0
+personal-finance                   0       8     143       0       0       0       0       0
+business                           1       2      45       6      16      41      27       6
+health                             8      10      16      10      22      18       7       2
+feature                            0       0       0       0      13      39      16       7
+category                           0      23      24       5       6       1       0       2
+chatham-kent-news                  0       0       0       0       0       0       0      31
+livestock                          0       1      10       4       0       7       4       4
+pmn                                0      21       0       0       0       0       0       0
+commodities                        0       1      15       0       0       0       0       0
+=== thesudburystar
+thesudburystar: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                            1550    5560    7236    2343    6517    6781    6938    4954
+opinion                          151    1188    1848     688    1834    1739    1539     459
+entertainment                     23     384     692     246     850     926     874     383
+life                              15      98     797     284     802     852     855     634
+press-releases                     0       0       0       0       0       0       0     551
+sudbury                          108      67       0       0       0       0       0       0
+personal-finance                   0       8     144       0       0       0       0       0
+health                            11      23      19      15      28      28       9       1
+community                          0       0       0       0       1      90      13       0
+feature                            0       0       0       0       4      11      52      19
+category                           1      24      28      11       5       3       0       5
+business                           4       4      15       3       6       4       4       1
+technology                         2       0       0       1       5       9      24       0
+uncategorized                      0       9       3       0       6       7       6       4
+pmn                                0      26       0       0       0       2       0       0
+=== chroniclejournal
+chroniclejournal: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                            2035    6997    6688    6356    6263    5678    4634    3581
+business                         376    1147    1238    1756    1699    1257     440     267
+entertainment                    183     544    1054    1426    1293    1369    1279     723
+online_features                  188     685     751     734     649     466     397     203
+life                              74     627    2173     332      73      58      70      68
+prairies                          14     264     241     499     465     350      69      51
+atlantic                           1      93     204     135      88     107      58      42
+opinion                           14      67      52      61      65      42      46      31
+weather                           23      42       0       0       0       0       0       0
+sports                             0       1       2       3       0       0       0       0
+travel                             0       5       0       0       0       0       0       0
+he-shoots-he-scores                2       0       0       0       0       0       0       0
+bat-at-the-puck                    1       0       0       0       0       0       0       0
+help-lower-the-risk-of-infl        1       0       0       0       0       0       0       0
+headed-for-court                   1       0       0       0       0       0       0       0
+=== wellandtribune
+wellandtribune: top URL sections by year
+
+section                         2019    2020    2023    2024    2025    2026
+news                               0    1330    2223    6247   11793    8091
+ts                                 0    7222    5352       0       0       0
+news-story                      2376    4562       0       0       0       0
+business                           0      94     246    1094    2309    1961
+life                               0     201     475    1134    2334    1383
+politics                           0       0     270     682    1630     591
+opinion                            0     151     419     792     708     734
+entertainment                      0     120     178     477     904     532
+whatson-story                    618    1098       0       0       0       0
+thestar                            0       0      37      49    1052     456
+things-to-do                       0       0      32     184     270     259
+living-story                      91     154       0       0       0       0
+events                           126     107       0       0       0       0
+opinion-story                     94     131       0       0       0       0
+ths                                0     100     115       0       0       0
+=== windsorstar
+windsorstar: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                            1461    5852    6440    2356    7100    4891    5347    3830
+entertainment                    506     718    1618     401    1091    2144    1962    1260
+opinion                          136     502     858     341     699     553     406     179
+life                             205     206     466      99     360     408     281     261
+pmn                              262     312     489     101     350      32      17       2
+fp-finance                         0       0      11       3      23     382     252     273
+technology                       236     139      17       6       2       6      22      19
+shopping-essentials                0       0      12       5       9     364      17       0
+investing                          8     130     156       1       5      19      30      24
+business                          27      45      62      37     125      13      24      12
+commodities                       23      12      37       4       5      11      61      44
+health                            15      22      49      15      36       6       5       4
+category                           0      18      51      34       6       1       3       6
+entrepreneur                       5      27      22       1       9      17       6       2
+feature                            2       0       0       0      26      18      21      11
+=== journaldequebec
+journaldequebec: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+2021                               0       2   29894      33       1       0       0       0
+2025                               0       0       0       0       0      17   25746      33
+2020                               3   24925       6       2       0       0       0       0
+2023                               0       0       0       1   19775      22       0       0
+2024                               0       0       0       0      11   18387      24       0
+2022                               0       0       3   17917       9       0       1       0
+2026                               0       0       0       0       0       0      31   11302
+2019                            8001      22       0       1       0       0       1       0
+2018                               2       1       2       0       0       0       0       0
+actualite                          0       0       3       0       0       0       0       0
+2017                               0       1       0       0       0       0       1       0
+enquetes                           0       0       2       0       0       0       0       0
+sports                             1       0       0       0       0       0       0       0
+recherche-intelligente-avec        1       0       0       0       0       0       0       0
+avec-desjardins                    1       0       0       0       0       0       0       0
+=== sherbrookerecord
+sherbrookerecord: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+freeland-addresses-local-wo        1       0       0       0       0       0       0       0
+estrie-sees-significant-inc        1       0       0       0       0       0       0       0
+hospital-users-committee-to        1       0       0       0       0       0       0       0
+the-golden-lion-pub-and-bre        1       0       0       0       0       0       0       0
+young-pumpkin-wins-by-a-hai        1       0       0       0       0       0       0       0
+climate-strike-draws-record        1       0       0       0       0       0       0       0
+historic-round-barns-of-the        1       0       0       0       0       0       0       0
+sawyerville-farmers-market-        1       0       0       0       0       0       0       0
+etsb-waiting-at-bated-breat        1       0       0       0       0       0       0       0
+young-pumpkins-bigger-every        1       0       0       0       0       0       0       0
+federal-election-2019-whos-        1       0       0       0       0       0       0       0
+sunshine-and-smiles-for-the        1       0       0       0       0       0       0       0
+massey-vanier-athletics-dep        1       0       0       0       0       0       0       0
+local-mayors-press-for-acti        1       0       0       0       0       0       0       0
+sherbrookes-camp-newington         1       0       0       0       0       0       0       0
+=== paherald
+paherald: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+2021                               0       0    1958       4       0       0       0       0
+2022                               0       0       0     188       0       0       0       0
+2020                               0      99       9       0       0       0       0       0
+blog                               0       0       0      47       0       0       0       0
+author                             0       0      22       0      12       0       1       0
+2019                              24       1       0       0       0       0       0       0
+category                           0       0       6       0       5       0       0       0
+product                            0       0       1       0       9       0       0       0
+latest-posts-letter-to-the-        0       0       1       0       0       0       0       0
+the-northern-advocate              0       0       1       0       0       0       0       0
+things-to-do                       0       0       1       0       0       0       0       0
+latest-posts-poems                 0       0       1       0       0       0       0       0
+northern-advocate                  0       0       1       0       0       0       0       0
+michif-language-book-launch        0       0       0       0       1       0       0       0
+local-french-society-please        0       0       0       0       1       0       0       0
+=== lethbridgeherald
+lethbridgeherald: top URL sections by year
+
+section                         2019    2020    2021    2022    2024    2025    2026
+news                            3596    6156   11426    2042    8503    6558    5735
+entertainment                    714    1332    3376     615    3621    4187    2997
+business                         374     546    1163     199     715       0       0
+commentary                       206     299     226      92     255     378     139
+federal-election                  16       0     194       0       0       0       0
+sunny-escapes                      0       0       0       0       0      96      87
+hot-summer-guide                   0       0       0       0     117       0       0
+cool-winter-guide                  0       0       0       0      39      34       0
+sports                             0       1      10       0       0       0       0
+life                               3       3       0       0       0       0       0
+lethbridge-news                    2       0       0       0       0       0       0
+sponsored                          0       1       0       0       1       0       0
+=== medicinehatnews
+medicinehatnews: top URL sections by year
+
+section                         2019    2020    2021    2022    2024    2025    2026
+news                            3842    6421   11929    2123    8662    6584    6009
+entertainment                    780    1339    3328     603    3608    4094    3125
+business                        1067    1884    4145     758    2678       1       0
+commentary                       155     163     378      67     244     236     146
+federal-election                 116       0     317       0       0       0       0
+sunny-escapes                      0       0       0       0       0      97      83
+hot-summer-guide                   0       0       0       0     110       0       0
+life                               8      11       4       2       0       0       0
+uncategorized                      2       1       1       0       0       1       1
+municipal-election                 0       0       4       0       0       0       0
+sports                             0       0       0       0       0       1       1
+brides                             0       1       0       0       0       0       0
+=== kelownadailycourier
+kelownadailycourier: top URL sections by year
+
+section                         2019    2020    2021    2022    2023    2024    2025    2026
+news                            2173    6486    5517    4303    3583    4452    3424    2580
+entertainment                    346     997    1498    1622    1500    1606    1775    1047
+business_news                    648    1681    1747    1666    1876    1370     626     357
+online_features                  190     663     492     426     444     427     462     229
+life                             265     761     334     160     156     201     218     148
+opinion                          213     401     263     151      34     314     201      93
+prairies                          67     228     282     170     155     120      65      51
+atlantic                           1      20      63      63      46      68      52      41
+weather                           21      33       2       0       0       0       0       0
+travel                             9      26       0       1       0       0       0       0
+spare_news                         1       1       1       1       0       0       0       0
+sponsored                          0       2       1       0       0       0       0       0
+poll_ad561248-fc1e-11e9-997        1       0       0       0       0       0       0       0
+poll_5fd1b8ec-04f7-11ea-a24        1       0       0       0       0       0       0       0
+poll_e135057e-0727-11ea-839        1       0       0       0       0       0       0       0

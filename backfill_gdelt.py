@@ -42,11 +42,14 @@ def main():
     ap.add_argument("--start", required=True, help="YYYY-MM")
     ap.add_argument("--end", required=True, help="YYYY-MM (inclusive)")
     ap.add_argument("--dry-run", action="store_true", help="estimate bytes scanned only")
+    ap.add_argument("--outlets", help="only these outlet_ids, comma separated")
     args = ap.parse_args()
-
     conn = connect()
     sync_outlets(conn)
     domain_to_outlet = dict(conn.execute("SELECT domain, outlet_id FROM outlets").fetchall())
+    if args.outlets:
+        keep = set(args.outlets.split(","))
+        domain_to_outlet = {d: o for d, o in domain_to_outlet.items() if o in keep}
     client = bigquery.Client()
     now = datetime.now(timezone.utc).isoformat()
     total_bytes = 0

@@ -17,7 +17,7 @@ import random
 import re
 from urllib.parse import parse_qsl, urlencode, urlsplit
 
-from build_terms import (MAX_PER_OUTLET_QUARTER, load_english_outlets, load_keep, quarter_of,
+from build_terms import (MAX_PER_OUTLET_QUARTER, load_keep, load_outlet_languages, quarter_of,
                          section_key, terms_of)
 from db import HERE, connect
 from lean_terms import MIN_OUTLET_QUARTER_HEADLINES
@@ -41,8 +41,10 @@ def tidy(url):
 
 def main():
     watch = set(load_watch())
-    keep, english = load_keep(), load_english_outlets()
+    keep, lang = load_keep(), load_outlet_languages()
     conn = connect()
+    conn.execute("CREATE TABLE IF NOT EXISTS translations "
+                 "(headline_id INTEGER PRIMARY KEY, text_en TEXT)")
     conn.execute("CREATE TABLE IF NOT EXISTS link_status (url TEXT PRIMARY KEY, status INTEGER, checked_on TEXT)")
     dead = {u for (u,) in conn.execute("SELECT url FROM link_status WHERE status IN (404, 410)")}
 
@@ -54,13 +56,22 @@ def main():
     for quarter, months in quarters.items():
         marks = ",".join("?" * len(months))
         rows = conn.execute(
-            "SELECT c.outlet_id, c.headline, h.url, h.published_at FROM headlines_clean c "
+            "SELECT c.outlet_id, c.headline, h.url, h.published_at, t.text_en FROM headlines_clean c "
             "JOIN headlines h ON h.id = c.id "
+            "LEFT JOIN translations t ON t.headline_id = c.id "
             f"WHERE c.is_syndicated = 0 AND c.month IN ({marks}) ORDER BY c.id", months).fetchall()
         by_outlet = collections.defaultdict(list)
-        for oid, headline, url, published in rows:
-            if oid in english and keep.get((oid, section_key(url))):
-                by_outlet[oid].append((headline, url, published))
+        for oid, headline, url, published, text_en in rows:
+            lg = lang.get(oid)
+            shown = headline                    # what visitors see: the original headline
+            if lg == "fr":
+                if not text_en:
+                    continue                    # not translated yet
+                headline = text_en              # what is matched against the watch terms
+            elif lg != "en":
+                continue
+            if keep.get((oid, section_key(url))):
+                by_outlet[oid].append((headline, url, published, shown))
         rng = random.Random(quarter)            # identical to build_terms.py, so the same headlines are used
         for oid, items in by_outlet.items():
             if len(items) > MAX_PER_OUTLET_QUARTER:
@@ -68,9 +79,9 @@ def main():
             if len(items) < MIN_OUTLET_QUARTER_HEADLINES:
                 continue                         # the site hides this outlet-quarter, so no examples either
             matches = collections.defaultdict(list)
-            for headline, url, published in items:
+            for headline, url, published, shown in items:
                 for t in terms_of(headline) & watch:
-                    matches[t].append((headline, tidy(url), (published or "")[:10]))
+                    matches[t].append((shown, tidy(url), (published or "")[:10]))
             pick = random.Random(f"{quarter}|{oid}")
             for t, lst in matches.items():
                 lst = sorted({x[1]: x for x in lst}.values(), key=lambda x: x[1])   # one entry per link, stable order

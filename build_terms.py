@@ -70,13 +70,21 @@ def load_english_outlets():
                 if (r.get("language") or "en").strip() == "en"}
 
 
+def load_outlet_languages():
+    with open(HERE / "outlets.csv", newline="", encoding="utf-8") as f:
+        return {r["outlet_id"]: (r.get("language") or "en").strip().lower()
+                for r in csv.DictReader(f)}
+
+
 def quarter_of(month):  # 'YYYY-MM' -> 'YYYY-Qn'
     return f"{month[:4]}-Q{(int(month[5:7]) - 1) // 3 + 1}"
 
 
 def main():
-    keep, english = load_keep(), load_english_outlets()
+    keep, lang = load_keep(), load_outlet_languages()
     conn = connect()
+    conn.execute("CREATE TABLE IF NOT EXISTS translations "
+                 "(headline_id INTEGER PRIMARY KEY, text_en TEXT)")
     conn.executescript("""
         DROP TABLE IF EXISTS term_counts;
         DROP TABLE IF EXISTS quarter_totals;
@@ -93,13 +101,21 @@ def main():
     for quarter, months in quarters.items():
         marks = ",".join("?" * len(months))
         rows = conn.execute(
-            "SELECT c.outlet_id, c.headline, h.url FROM headlines_clean c "
+            "SELECT c.outlet_id, c.headline, h.url, t.text_en FROM headlines_clean c "
             "JOIN headlines h ON h.id = c.id "
+            "LEFT JOIN translations t ON t.headline_id = c.id "
             f"WHERE c.is_syndicated = 0 AND c.month IN ({marks}) ORDER BY c.id", months).fetchall()
 
         by_outlet = collections.defaultdict(list)
-        for oid, headline, url in rows:
-            if oid in english and keep.get((oid, section_key(url))):
+        for oid, headline, url, text_en in rows:
+            lg = lang.get(oid)
+            if lg == "fr":
+                if not text_en:
+                    continue            # not translated yet
+                headline = text_en
+            elif lg != "en":
+                continue
+            if keep.get((oid, section_key(url))):
                 by_outlet[oid].append(headline)
 
         counts, totals = collections.Counter(), collections.Counter()

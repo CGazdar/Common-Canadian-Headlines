@@ -37,6 +37,18 @@ OUTLET_CITIES = {
     "ledevoir": ("Montreal", 45.5017, -73.5673), "jdm": ("Montreal", 45.5017, -73.5673),
     "chronicleherald": ("Halifax", 44.6488, -63.5752), "saltwire": ("Halifax", 44.6488, -63.5752),
     "telegraph": ("Saint John", 45.2733, -66.0633), "cbcnorth": ("Yellowknife", 62.4540, -114.3718),
+    "saultstar": ("Sault Ste. Marie", 46.5219, -84.3461), "theobserver": ("Sarnia", 42.9745, -82.4066),
+    "simcoereformer": ("Simcoe", 42.8370, -80.3033), "stcatharinesstandard": ("St. Catharines", 43.1594, -79.2469),
+    "stratfordbeaconherald": ("Stratford", 43.3700, -80.9822), "thesudburystar": ("Sudbury", 46.4917, -80.9930),
+    "chroniclejournal": ("Thunder Bay", 48.3809, -89.2477), "wellandtribune": ("Welland", 42.9920, -79.2483),
+    "windsorstar": ("Windsor", 42.3149, -83.0364), "journaldequebec": ("Quebec City", 46.8139, -71.2080),
+    "sherbrookerecord": ("Sherbrooke", 45.4042, -71.8929), "paherald": ("Prince Albert", 53.2033, -105.7531),
+    "lethbridgeherald": ("Lethbridge", 49.6935, -112.8418), "medicinehatnews": ("Medicine Hat", 50.0405, -110.6764),
+    "kelownadailycourier": ("Kelowna", 49.8880, -119.4960), "pentictonherald": ("Penticton", 49.4991, -119.5937),
+    "timescolonist": ("Victoria", 48.4284, -123.3656), "brandonsun": ("Brandon", 49.8485, -99.9501),
+    "acadienouvelle": ("Caraquet", 47.7940, -64.9460), "intelligencer": ("Belleville", 44.1628, -77.3832),
+    "brantfordexpositor": ("Brantford", 43.1394, -80.2644), "recorder": ("Brockville", 44.5895, -75.6843),
+    "reddeeradvocate": ("Red Deer", 52.2681, -113.8112), "chathamdailynews": ("Chatham", 42.4048, -82.1910),
 }
 
 
