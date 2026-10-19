@@ -20,7 +20,7 @@ from urllib.parse import parse_qsl, urlencode, urlsplit
 from build_terms import (MAX_PER_OUTLET_QUARTER, load_keep, load_outlet_languages, quarter_of,
                          section_key, terms_of)
 from db import HERE, connect
-from lean_terms import MIN_OUTLET_QUARTER_HEADLINES
+from lean_terms import MIN_OUTLET_QUARTER_HEADLINES, min_headlines
 from track_terms import load_watch
 
 PER_OUTLET_QUARTER = 5
@@ -76,7 +76,7 @@ def main():
         for oid, items in by_outlet.items():
             if len(items) > MAX_PER_OUTLET_QUARTER:
                 items = rng.sample(items, MAX_PER_OUTLET_QUARTER)
-            if len(items) < MIN_OUTLET_QUARTER_HEADLINES:
+            if len(items) < min_headlines(oid):
                 continue                         # the site hides this outlet-quarter, so no examples either
             matches = collections.defaultdict(list)
             for headline, url, published, shown in items:

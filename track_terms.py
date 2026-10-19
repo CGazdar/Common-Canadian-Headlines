@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 
 from build_terms import STOPWORDS, terms_of
 from db import HERE, connect
-from lean_terms import GROUP_MAP, MIN_OUTLET_QUARTER_HEADLINES, load_outlets
+from lean_terms import GROUP_MAP, MIN_OUTLET_QUARTER_HEADLINES, min_headlines, load_outlets
 
 COLORS = {"left": "#2a6fb0", "center": "#7a7a7a", "right": "#c0392b"}
 
@@ -51,7 +51,7 @@ def main():
     conn = connect()
     totals = {(q, o): n for q, o, n in conn.execute(
         "SELECT quarter, outlet_id, headlines FROM quarter_totals")
-        if o in info and n >= MIN_OUTLET_QUARTER_HEADLINES}
+        if o in info and n >= min_headlines(o)}
     quarters = sorted({q for q, _ in totals})
 
     marks = ",".join("?" * len(watch))

@@ -19,6 +19,15 @@ from db import HERE, connect
 GROUP_MAP = {"left": "left", "lean_left": "left", "center": "center",
              "lean_right": "right", "right": "right"}
 MIN_OUTLET_QUARTER_HEADLINES = 300  # an outlet-quarter with fewer usable headlines is ignored
+
+# Small outlets kept on purpose (e.g. the territories' only local papers): their quarters count
+# once they reach this many headlines, instead of MIN_OUTLET_QUARTER_HEADLINES.
+MIN_OVERRIDES = {"whitehorsestar": 100, "yukonnews": 100}
+
+
+def min_headlines(outlet_id):
+    return MIN_OVERRIDES.get(outlet_id, MIN_OUTLET_QUARTER_HEADLINES)
+
 MIN_TERM_HEADLINES = 40             # a term needs this many headlines within the group
 MIN_OWNERS = 2                      # ...and must be used by this many different owners
 MIN_COUNT_PER_OWNER = 5             # an owner "uses" a term if it appears in this many headlines
@@ -76,7 +85,7 @@ def main():
     rows = [(q, oid, info[oid][0], info[oid][1], n)
             for q, oid, n in conn.execute(
                 "SELECT quarter, outlet_id, headlines FROM quarter_totals").fetchall()
-            if oid in info and n >= MIN_OUTLET_QUARTER_HEADLINES]
+            if oid in info and n >= min_headlines(oid)]
     if not rows:
         sys.exit("No outlet-quarters pass the thresholds. Check 'leaning' in outlets.csv.")
     conn.executemany("INSERT INTO eligible_oq VALUES (?,?,?,?,?)", rows)

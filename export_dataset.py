@@ -13,7 +13,7 @@ from datetime import date
 
 from db import HERE, connect
 from export_site_data import OVERRIDE
-from lean_terms import MIN_OUTLET_QUARTER_HEADLINES, load_outlets
+from lean_terms import MIN_OUTLET_QUARTER_HEADLINES, min_headlines, load_outlets
 from track_terms import load_watch
 
 OUT = HERE / "docs" / "downloads"
@@ -40,7 +40,7 @@ def main():
     conn = connect()
     totals = {(q, o): n for q, o, n in conn.execute(
         "SELECT quarter, outlet_id, headlines FROM quarter_totals")
-        if o in meta and n >= MIN_OUTLET_QUARTER_HEADLINES}
+        if o in meta and n >= min_headlines(o)}
     marks = ",".join("?" * len(watch))
     counts = {(t, q, o): n for t, q, o, n in conn.execute(
         f"SELECT term, quarter, outlet_id, n FROM term_counts WHERE term IN ({marks})", watch)}

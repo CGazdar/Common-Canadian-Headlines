@@ -49,6 +49,12 @@ OUTLET_CITIES = {
     "acadienouvelle": ("Caraquet", 47.7940, -64.9460), "intelligencer": ("Belleville", 44.1628, -77.3832),
     "brantfordexpositor": ("Brantford", 43.1394, -80.2644), "recorder": ("Brockville", 44.5895, -75.6843),
     "reddeeradvocate": ("Red Deer", 52.2681, -113.8112), "chathamdailynews": ("Chatham", 42.4048, -82.1910),
+    "yukonnews": ("Whitehorse", 60.7212, -135.0568), "whitehorsestar": ("Whitehorse", 60.7212, -135.0568),
+    "vocm": ("St. John's", 47.5615, -52.7126),
+    "standardfreeholder": ("Cornwall", 45.0212, -74.7303), "thespec": ("Hamilton", 43.2557, -79.8711),
+    "thewhig": ("Kingston", 44.2312, -76.4860), "lfpress": ("London", 42.9849, -81.2453),
+    "niagarafallsreview": ("Niagara Falls", 43.0896, -79.0849), "nugget": ("North Bay", 46.3091, -79.4608),
+    "owensoundsuntimes": ("Owen Sound", 44.5690, -80.9435), "peterboroughexaminer": ("Peterborough", 44.3091, -78.3197),
 }
 
 

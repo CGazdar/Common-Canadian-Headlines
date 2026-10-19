@@ -27,21 +27,21 @@ jdm,Journal de Montréal,journaldemontreal.com,QC,provincial,fr,right,2026-10-15
 chronicleherald,Chronicle Herald,thechronicleherald.ca,NS,provincial,en,,,,,Halifax Herald
 saltwire,SaltWire Network,saltwire.com,NS,provincial,en,,,,Successor to chronicleherald.ca; Atlantic-wide brands,SaltWire
 cbcnorth,CBC North,cbc.ca/north,NT,provincial,en,lean_left,,https://www.cbc.ca/webfeed/rss/rss-canada-north,Split out of cbc by address; covers YT NT NU,CBC
-saultstar,Sault Star,saultstar.com,ON,local,en,lean_right,2026-10-17,,Postmedia
-theobserver,Sarnia Observer,theobserver.ca,ON,local,en,lean_right,2026-10-17,,Postmedia
-simcoereformer,Simcoe Reformer,simcoereformer.ca,ON,local,en,,2026-10-17,Ground News rating unknown,Postmedia
-stcatharinesstandard,St. Catharines Standard,stcatharinesstandard.ca,ON,local,en,lean_left,2026-10-17,,Torstar
-stratfordbeaconherald,Stratford Beacon Herald,stratfordbeaconherald.com,ON,local,en,lean_right,2026-10-17,,Postmedia
-thesudburystar,The Sudbury Star,thesudburystar.com,ON,local,en,,2026-10-17,Ground News rating unknown,Postmedia
-chroniclejournal,Thunder Bay Chronicle-Journal,chroniclejournal.com,ON,local,en,center,2026-10-17,,Continental Newspapers
-wellandtribune,Welland Tribune,wellandtribune.ca,ON,local,en,,2026-10-17,Ground News rating unknown,Torstar
-windsorstar,Windsor Star,windsorstar.com,ON,local,en,lean_right,2026-10-17,,Postmedia
-journaldequebec,Journal de Québec,journaldequebec.com,QC,local,fr,right,2026-10-17,French: needs separate tokenizer and stopwords; aligned with Journal de Montréal,Quebecor
-sherbrookerecord,Sherbrooke Record,sherbrookerecord.com,QC,local,en,,2026-10-17,Ground News rating unknown,Alta Newspaper Group
-paherald,Prince Albert Daily Herald,paherald.sk.ca,SK,local,en,,2026-10-17,Ground News rating unknown,Star City Printers
-lethbridgeherald,Lethbridge Herald,lethbridgeherald.com,AB,local,en,lean_left,2026-10-17,,Alta Newspaper Group
-medicinehatnews,Medicine Hat News,medicinehatnews.com,AB,local,en,center,2026-10-17,,Alta Newspaper Group
-kelownadailycourier,Kelowna Daily Courier,kelownadailycourier.ca,BC,local,en,center,2026-10-17,,Continental Newspapers
+saultstar,Sault Star,saultstar.com,ON,local,en,lean_right,2026-10-17,,,Postmedia
+theobserver,Sarnia Observer,theobserver.ca,ON,local,en,lean_right,2026-10-17,,,Postmedia
+simcoereformer,Simcoe Reformer,simcoereformer.ca,ON,local,en,,2026-10-17,,Ground News rating unknown,Postmedia
+stcatharinesstandard,St. Catharines Standard,stcatharinesstandard.ca,ON,local,en,lean_left,2026-10-17,,,Torstar
+stratfordbeaconherald,Stratford Beacon Herald,stratfordbeaconherald.com,ON,local,en,lean_right,2026-10-17,,,Postmedia
+thesudburystar,The Sudbury Star,thesudburystar.com,ON,local,en,,2026-10-17,,Ground News rating unknown,Postmedia
+chroniclejournal,Thunder Bay Chronicle-Journal,chroniclejournal.com,ON,local,en,center,2026-10-17,,,Continental Newspapers
+wellandtribune,Welland Tribune,wellandtribune.ca,ON,local,en,,2026-10-17,,Ground News rating unknown,Torstar
+windsorstar,Windsor Star,windsorstar.com,ON,local,en,lean_right,2026-10-17,,,Postmedia
+journaldequebec,Journal de Québec,journaldequebec.com,QC,local,fr,right,2026-10-17,,French: needs separate tokenizer and stopwords; aligned with Journal de Montréal,Quebecor
+sherbrookerecord,Sherbrooke Record,sherbrookerecord.com,QC,local,en,,2026-10-17,,Ground News rating unknown,Alta Newspaper Group
+paherald,Prince Albert Daily Herald,paherald.sk.ca,SK,local,en,,2026-10-17,,Ground News rating unknown,Star City Printers
+lethbridgeherald,Lethbridge Herald,lethbridgeherald.com,AB,local,en,lean_left,2026-10-17,,,Alta Newspaper Group
+medicinehatnews,Medicine Hat News,medicinehatnews.com,AB,local,en,center,2026-10-17,,,Alta Newspaper Group
+kelownadailycourier,Kelowna Daily Courier,kelownadailycourier.ca,BC,local,en,center,2026-10-17,,,Continental Newspapers
 pentictonherald,Penticton Herald,pentictonherald.ca,BC,local,en,,,,rating not found yet; verify owner,
 timescolonist,Victoria Times Colonist,timescolonist.com,BC,local,en,,,,rating not found yet; verify owner,
 brandonsun,Brandon Sun,brandonsun.com,MB,local,en,,,,rating not found yet; verify owner,
@@ -51,3 +51,14 @@ brantfordexpositor,Brantford Expositor,brantfordexpositor.ca,ON,local,en,,,,rati
 recorder,Brockville Recorder and Times,recorder.ca,ON,local,en,,,,rating not found yet,Postmedia
 reddeeradvocate,Red Deer Advocate,reddeeradvocate.com,AB,local,en,,,,rating not found yet; verify owner,
 chathamdailynews,Chatham Daily News,chathamdailynews.ca,ON,local,en,,,,rating not found yet,Postmedia
+yukonnews,Yukon News,yukon-news.com,YT,local,en,,,,"rating not found yet; below 300/quarter, kept on purpose (min 100)",
+whitehorsestar,Whitehorse Star,whitehorsestar.com,YT,local,en,,,,"closed 2024, data ends then; below 300/quarter, kept on purpose (min 100)",
+vocm,VOCM,vocm.com,NL,local,en,,,,rating not found yet; radio/online; Newfoundland's only usable outlet,
+standardfreeholder,Cornwall Standard-Freeholder,standard-freeholder.com,ON,local,en,,,,Postmedia; rating not found yet,Postmedia
+thespec,The Hamilton Spectator,thespec.com,ON,local,en,lean_left,2026-10-17,,Ground News Lean Left,Torstar
+thewhig,The Kingston Whig-Standard,thewhig.com,ON,local,en,,,,Postmedia; rating not found yet,Postmedia
+lfpress,London Free Press,lfpress.com,ON,local,en,lean_right,2026-10-17,,MBFC Right-Center,Postmedia
+niagarafallsreview,Niagara Falls Review,niagarafallsreview.ca,ON,local,en,lean_left,2026-10-17,,MBFC Left-Center,Torstar
+nugget,North Bay Nugget,nugget.ca,ON,local,en,lean_right,2026-10-17,,MBFC Right-Center,Postmedia
+owensoundsuntimes,Owen Sound Sun Times,owensoundsuntimes.com,ON,local,en,lean_right,2026-10-17,,Rating page cites MBFC,Postmedia
+peterboroughexaminer,The Peterborough Examiner,thepeterboroughexaminer.com,ON,local,en,lean_left,2026-10-17,,Ground News Lean Left,Torstar
