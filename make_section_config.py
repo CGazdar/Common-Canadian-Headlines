@@ -1,8 +1,3 @@
-"""Write sections.csv: one row per outlet + URL section, with a default keep guess.
-Open it, edit the 'keep' column (1 = use in the analysis, 0 = ignore), and save.
-Safe to rerun: your earlier choices are kept; only new sections get default guesses.
-Run after clean.py. Usage: python make_section_config.py
-"""
 import collections
 import csv
 from urllib.parse import urlparse

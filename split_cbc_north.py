@@ -1,14 +1,3 @@
-"""Pull CBC's North coverage out of the main CBC feed so the territories get their own outlet, "cbcnorth".
-
-Step 1 (safe, changes nothing):   python split_cbc_north.py
-   Prints how many CBC North headlines you have per quarter, plus a few examples.
-Step 2 (after you add the cbcnorth row to outlets.csv):   python split_cbc_north.py --apply
-   Moves those headlines from "cbc" to "cbcnorth". Run it again any time new CBC headlines have been collected.
-
-CBC North stories mostly live under /news/canada/north/ in the web address. Some North stories
-are filed under plain /news/canada/ instead, so this finds most of the history but not all of it.
-(The live RSS feed for North, added in outlets.csv, catches everything from now on.)
-"""
 import sys
 
 from db import connect, sync_outlets

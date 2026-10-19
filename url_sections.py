@@ -1,6 +1,3 @@
-"""Count an outlet's cleaned headlines by URL section (first path segment), per year.
-Usage: python url_sections.py wfp
-"""
 import collections
 import sys
 from urllib.parse import urlparse

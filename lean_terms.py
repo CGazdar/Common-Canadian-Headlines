@@ -1,13 +1,3 @@
-"""Find the terms most characteristic of each leaning group, and follow them over time.
-
-Needs: outlets.csv with 'leaning' (and 'owner') filled in, plus the tables built by
-build_terms.py. Writes three CSV files next to this script:
-  distinctive_terms.csv   top terms per group, whole period
-  term_trends.csv         those terms' rate per 1,000 headlines, per quarter and group
-  coverage_by_quarter.csv which outlets/owners/headlines each group rests on, per quarter
-
-Usage: python lean_terms.py
-"""
 import collections
 import csv
 import math

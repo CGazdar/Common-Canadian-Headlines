@@ -1,20 +1,3 @@
-"""Translate French headlines into English so the French outlets can join the analysis.
-
-Uses an open translation model (Helsinki-NLP opus-mt-fr-en) that runs on your own computer:
-free, no account, and no headlines are sent to anyone. It can be stopped (Ctrl+C) and resumed.
-
-One-time setup (in your project environment):
-    pip install transformers sentencepiece torch
-The first run downloads the model (about 300 MB).
-
-Usage:
-    python translate_headlines.py            translate everything that is not done yet
-    python translate_headlines.py 200        translate only 200 headlines (a quick trial)
-    python translate_headlines.py --sample   print 30 random French/English pairs to eyeball
-
-Results are saved in a table called translations (headline id -> English text). The French
-originals in headlines and headlines_clean are never changed.
-"""
 import csv
 import os
 import sys

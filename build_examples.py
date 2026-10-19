@@ -1,16 +1,3 @@
-"""Pick example headlines (with links to the original articles) for the website.
-
-For every watch term, outlet and quarter it keeps up to 5 random headlines that contain the term.
-It uses exactly the same headlines as build_terms.py (same cleaning, section filter, syndication
-filter and per-quarter sample), so the examples always match the numbers on the site.
-Articles that check_links.py found dead (404 / 410) are skipped and replaced by other examples.
-
-Output: docs/examples/<term>.json, one file per term. The page loads only the terms a visitor picks.
-
-Usage:  python build_examples.py
-Then:   python check_links.py        (checks the chosen links, slow but only needed for new ones)
-Then:   python build_examples.py     (swaps any dead links for working ones)
-"""
 import collections
 import json
 import random

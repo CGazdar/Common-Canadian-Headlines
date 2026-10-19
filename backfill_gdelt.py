@@ -1,4 +1,3 @@
-"""Backfill headlines from GDELT's Global Knowledge Graph (GKG) via BigQuery."""
 import argparse
 from datetime import date, datetime, timezone
 

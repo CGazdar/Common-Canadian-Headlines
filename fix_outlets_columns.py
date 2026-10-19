@@ -1,8 +1,3 @@
-"""Repair rows in outlets.csv that have 10 fields instead of 11 (the owner slid into the notes column).
-
-    python fix_outlets_columns.py          show what would change
-    python fix_outlets_columns.py --apply  fix the file (a backup is saved as outlets.csv.bak)
-"""
 import csv
 import shutil
 import sys

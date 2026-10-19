@@ -1,12 +1,3 @@
-"""Count terms per outlet per quarter from the cleaned headlines.
-
-Uses only: headlines in URL sections marked keep=1 in sections.csv, headlines not
-flagged as syndicated, and English-language outlets (language column in outlets.csv).
-A term (single word or two-word phrase) is counted once per headline.
-Uses ONE database connection throughout (no reader/writer deadlocks).
-
-Usage: python build_terms.py
-"""
 import collections
 import csv
 import random

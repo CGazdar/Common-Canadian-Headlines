@@ -1,6 +1,3 @@
-"""Look inside one outlet's cleaned headlines for one year, optionally one URL section.
-Usage: python inspect_outlet.py wfp 2024 [url_section]
-"""
 import collections
 import sys
 

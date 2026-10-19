@@ -1,10 +1,3 @@
-"""Turn province boundaries into docs/map.js (the shapes the website draws).
-
-Step 1, download the boundaries once (in the terminal, from the project folder):
-  curl -L -o ne_admin1.geojson https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson
-Step 2:  python make_map.py
-Natural Earth is public domain. Needs no extra packages.
-"""
 import json
 import math
 import sys

@@ -1,14 +1,3 @@
-"""Check which example links still work, and remember the answer in the database.
-
-Reads docs/examples/*.json, asks each publisher's website whether the article still exists,
-and stores the result in the link_status table. Only 404 (not found) and 410 (gone) count as dead.
-Paywalls and bot blocking (403, 429, timeouts) are NOT treated as dead, because a reader's browser
-usually gets through. Links checked in the last 90 days are skipped, so reruns are quick.
-
-Usage:  python check_links.py          (can be stopped with Ctrl+C and resumed later)
-        python check_links.py 500      (check only 500 links, to try it out)
-Then:   python build_examples.py       (replaces dead links with working ones)
-"""
 import json
 import sys
 import threading

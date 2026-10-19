@@ -1,16 +1,3 @@
-"""Follow a list of terms you choose, by leaning group, quarter by quarter.
-
-Put the terms in watch_terms.txt (one per line, a single word or a two-word phrase;
-lines starting with # are ignored). Terms are matched the way build_terms.py counts them:
-lower case, without stopwords, so "defund the police" cannot be tracked but "defund" can.
-
-Writes (next to this script):
-  watch_trends.csv    rate per 1,000 headlines, per term, quarter and group
-  watch_by_outlet.csv rate per 1,000 headlines per term and outlet, whole period
-  watch_trends.png    one small chart per term, one line per group
-
-Usage: python track_terms.py
-"""
 import collections
 import csv
 import sys

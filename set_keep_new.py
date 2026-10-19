@@ -1,12 +1,3 @@
-"""Set the keep flag in sections.csv for the newly added outlets.
-
-Run AFTER `python make_section_config.py` has added the new outlets' rows (it keeps your
-earlier edits). Only the outlets listed below are touched; all other rows stay as they are.
-A section is matched on its first path piece, so news/local-news counts as news.
-
-    python set_keep_new.py          show what would change
-    python set_keep_new.py --apply  write sections.csv (a backup is saved as sections.csv.bak)
-"""
 import csv
 import shutil
 import sys

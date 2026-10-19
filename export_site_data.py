@@ -1,9 +1,3 @@
-"""Export the numbers the website needs to site/data.js.
-
-Uses the terms in watch_terms.txt (same file as track_terms.py), the leaning/owner
-columns in outlets.csv, and the tables made by build_terms.py.
-Usage: python export_site_data.py     then open site/index.html in a browser
-"""
 import csv
 import json
 

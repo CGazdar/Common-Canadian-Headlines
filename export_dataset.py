@@ -1,12 +1,3 @@
-"""Write the public dataset the Data tab offers for download.
-
-Output (in docs/, so GitHub Pages serves it):
-  docs/downloads/headline_terms.csv   one row per term x outlet x quarter
-  docs/downloads/dataset_info.js      small summary the Data page reads (row count, date, quarters)
-
-Only derived numbers go in: term counts and rates. No headline text and no URLs.
-Run it after export_site_data.py:   python export_dataset.py
-"""
 import csv
 import json
 from datetime import date

@@ -1,10 +1,3 @@
-"""Let chosen small outlets use a lower minimum headline count per quarter.
-
-Adds MIN_OVERRIDES and min_headlines() to lean_terms.py and makes the five places that
-compare against MIN_OUTLET_QUARTER_HEADLINES use it. Safe to run twice. Backups: *.bak
-
-    python patch_min_override.py
-"""
 import re
 import shutil
 from pathlib import Path
