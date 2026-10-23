@@ -91,10 +91,27 @@ padding:6px 9px;font-size:13px;display:none;box-shadow:0 2px 8px rgba(0,0,0,.15)
 .nav .ddmenu a{display:block;padding:8px 10px;border-radius:6px;color:var(--fg);text-decoration:none;font-size:14px}
 .nav .ddmenu a:hover{background:var(--nodata)}
 .nav .ddmenu a[aria-current=page]{font-weight:600}
+
+/* results table under the map */
+.tblwrap{max-height:430px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);margin-top:16px}
+table.rt{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.rt th{position:sticky;top:0;z-index:1;background:var(--card);text-align:left;font-weight:600;color:var(--mute);padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.rt th button{border:0;background:none;padding:0;font:inherit;color:inherit;cursor:pointer}
+.rt th button:hover,.rt th[aria-sort] button{color:var(--fg)}
+.rt th[aria-sort] button::after{content:" \25B2";font-size:9px}
+.rt th[aria-sort=descending] button::after{content:" \25BC"}
+.rt td{padding:7px 12px;border-bottom:1px solid var(--line)}
+.rt tr:last-child td{border-bottom:0}
+.rt tr.pg td{border-top:2px solid var(--line)}
+.rt .n{text-align:right}
+.rt td.nm{font-weight:600}
+.ldot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;vertical-align:-1px}
+#tblnote{margin-top:8px}
+@media(max-width:760px){.rt{font-size:13px}.rt th,.rt td{padding:7px 8px}}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="in"><a class="brand" href="index.html">Common Canadian Headliners</a><a class="tab" href="index.html" aria-current="page">Map</a><a class="tab" href="province.html">Provinces</a><a class="tab" href="about.html">About</a><div class="dd"><button class="ddbtn" type="button" aria-haspopup="true" aria-expanded="false">Data ▾</button><div class="ddmenu"><a href="data.html">Data Downloads</a><a href="sources.html">Sources</a></div></div><button id="dotbtn" class="tog" type="button" aria-pressed="true">Newspapers: on</button><button id="themebtn" type="button" aria-label="Switch between light and dark mode">Dark mode</button></div></nav>
+<nav class="nav"><div class="in"><a class="brand" href="index.html">Common Canadian Headliners</a><a class="tab" href="index.html" aria-current="page">Map</a><a class="tab" href="province.html">Provinces</a><a class="tab" href="about.html">About</a><a class="tab" href="data.html">Data Downloads</a><a class="tab" href="sources.html">Sources</a><button id="dotbtn" class="tog" type="button" aria-pressed="true">Newspapers: on</button><button id="themebtn" type="button" aria-label="Switch between light and dark mode">Dark mode</button></div></nav>
 <main>
 <h1>Common Canadian Headliners</h1>
 <p class="sub">How often a term appears in headlines, per 100,000, by province of the outlet. Click a province, or “All of Canada”, to see the three leaning groups over time. Grey provinces have no usable data for the chosen period.</p>
@@ -107,6 +124,9 @@ padding:6px 9px;font-size:13px;display:none;box-shadow:0 2px 8px rgba(0,0,0,.15)
 <div class="chips" id="chips"></div>
 <div class="mapwrap">
   <div class="card mapcard"><div class="cardhead"><h2 id="maptitle">Map</h2><div class="btns"><button id="natbtn">All of Canada</button></div></div><svg id="map" width="100%" viewBox="0 0 640 430"></svg><div id="scale" style="margin-top:8px"></div></div>
+  <h2 class="viz" id="tblh"></h2>
+  <div class="tblwrap" id="tblwrap" hidden><table class="rt" id="rt"></table></div>
+  <p class="note" id="tblnote"></p>
   <h2 class="viz" id="viz"></h2>
   <div class="charts" id="charts"></div>
 </div>
@@ -320,13 +340,64 @@ function drawCharts(){
     box.appendChild(d);
   }
 }
+
+// ---- results table: province, term, outlet, leaning, mentions
+const PORDER=["BC","AB","SK","MB","ON","QC","NB","NS","PE","NL","TER","NAT"];   // west to east, the territories, then national outlets
+const LORDER={left:0,lean_left:1,center:2,lean_right:3,right:4};
+let tsort={k:"prov",dir:1};
+function tableRows(){
+  const rows=[],idx=sel>=0?[sel]:Q.map((_,i)=>i);
+  terms.forEach(t=>Object.keys(D.outlets).forEach(o=>{
+    const m=D.outlets[o],p=REG[m.province]||m.province;
+    if(prov!=="NAT"&&p!==prov)return;
+    let n=0,h=0,any=false;
+    idx.forEach(i=>{
+      const r=D.rates[t]&&D.rates[t][o]?D.rates[t][o][i]:null,T=D.totals&&D.totals[o]?D.totals[o][i]:null;
+      if(r===null||r===undefined||!T)return;
+      any=true;n+=Math.round(r/1e5*T);h+=T;                // rates are stored rounded, so the count is rebuilt and rounded to a whole number
+    });
+    if(any)rows.push({p,t,o,name:m.name,group:m.group,leaning:m.leaning,n,h,rate:h?n/h*1e5:null});
+  }));
+  return rows;
+}
+function drawTable(){
+  const wrap=$("tblwrap"),head=$("tblh"),note=$("tblnote"),tb=$("rt");
+  if(!terms.length){head.innerHTML="Table<small>(Select term to Display)</small>";wrap.hidden=true;note.textContent="";return}
+  const rows=tableRows(),k=tsort.k;
+  const key={prov:r=>PORDER.indexOf(r.p),term:r=>terms.indexOf(r.t),outlet:r=>r.name.toLowerCase(),lean:r=>(LORDER[r.leaning]!==undefined?LORDER[r.leaning]:2),n:r=>r.n,rate:r=>r.rate===null?-1:r.rate,h:r=>r.h};
+  const order=[k,"prov","term","lean","outlet"];
+  rows.sort((a,b)=>{for(let j=0;j<order.length;j++){const f=key[order[j]],x=f(a),y=f(b);if(x<y)return j===0?-tsort.dir:-1;if(x>y)return j===0?tsort.dir:1}return 0});
+  const period=sel>=0?Q[sel]:"all quarters";
+  head.innerHTML="Table<small>"+rows.length.toLocaleString()+" rows · "+period+(prov!=="NAT"?" · "+NAMES[prov]:"")+"</small>";
+  const col=(id,label,cls)=>`<th class="${cls||""}"${tsort.k===id?` aria-sort="${tsort.dir>0?"ascending":"descending"}"`:""}><button type="button" data-k="${id}">${label}</button></th>`;
+  let html="<thead><tr>"+col("prov","Province")+col("term","Term")+col("outlet","Outlet")+col("lean","Leaning")+col("n","Mentions","n")+col("rate","Per 100,000","n")+col("h","Headlines","n")+"</tr></thead><tbody>";
+  let prevP=null;
+  rows.forEach(r=>{
+    const pn=r.p==="NAT"?"National":NAMES[r.p],ll=LEANLABEL[r.leaning]||GNAME[r.group];
+    html+=`<tr${k==="prov"&&prevP!==null&&r.p!==prevP?' class="pg"':""}><td>${pn}</td><td>${cap(r.t)}</td><td class="nm">${r.name}</td>`
+      +`<td><span class="ldot" style="background:var(--${r.group})"></span>${ll}</td>`
+      +`<td class="n">${r.n.toLocaleString()}</td><td class="n">${r.rate!==null&&r.rate>=1000?Math.round(r.rate).toLocaleString():fmt(r.rate)}</td><td class="n">${r.h.toLocaleString()}</td></tr>`;
+    prevP=r.p;
+  });
+  tb.innerHTML=html+"</tbody>";
+  wrap.hidden=!rows.length;
+  note.textContent=rows.length
+    ?"Mentions count the headlines containing the term in our sample (at most 1,500 per outlet per quarter), so compare outlets by the per-100,000 rate."+(prov!=="NAT"?" Showing "+NAMES[prov]+" only; choose “All of Canada” on the map for every province.":"")
+    :"No outlets with data for this selection.";
+}
+$("rt").addEventListener("click",e=>{
+  const b=e.target.closest("button[data-k]");if(!b)return;
+  const k=b.dataset.k;
+  if(tsort.k===k)tsort.dir=-tsort.dir;else{tsort.k=k;tsort.dir=(k==="n"||k==="rate"||k==="h")?-1:1}
+  drawTable();
+});
 function setSel(i){sel=i;$("qslider").value=i;$("allbtn").classList.remove("on");draw()}
 function draw(){
   document.body.classList.toggle("pre",!terms.length);
   $("viz").innerHTML="Visualizations"+(terms.length?"":"<small>(Select term to Display)</small>");
   $("qlabel").textContent=sel>=0?Q[sel]:"All";
   $("allbtn").classList.toggle("on",sel<0);
-  drawChips();drawMap();drawCharts();
+  drawChips();drawMap();drawTable();drawCharts();
 }
 function drawChips(){
   const box=$("chips");box.innerHTML="";
