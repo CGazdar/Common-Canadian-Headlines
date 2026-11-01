@@ -21,20 +21,20 @@ starphoenix,Saskatoon StarPhoenix,thestarphoenix.com,SK,local,en,lean_right,2026
 wfp,Winnipeg Free Press,winnipegfreepress.com,MB,local,en,center,2026-10-15,,,FP Canadian Newspapers
 winnipegsun,Winnipeg Sun,winnipegsun.com,MB,local,en,lean_right,2026-10-15,,,Postmedia
 gazette,Montreal Gazette,montrealgazette.com,QC,local,en,lean_right,2026-10-15,,,Postmedia
-lapresse,La Presse,lapresse.ca,QC,provincial,fr,,,,French: needs separate tokenizer and stopwords,La Presse
+lapresse,La Presse,lapresse.ca,QC,provincial,fr,lean_left,2026-10-19,,MBFC Left-Center,La Presse
 ledevoir,Le Devoir,ledevoir.com,QC,provincial,fr,center,2026-10-15,,French: needs separate tokenizer and stopwords,Le Devoir
 jdm,Journal de Montréal,journaldemontreal.com,QC,provincial,fr,right,2026-10-15,,French: needs separate tokenizer and stopwords,Quebecor
-chronicleherald,Chronicle Herald,thechronicleherald.ca,NS,provincial,en,,,,,Halifax Herald
+chronicleherald,Chronicle Herald,thechronicleherald.ca,NS,provincial,en,lean_right,2026-10-19,,MBFC Right-Center (Chronicle Herald),Halifax Herald
 saltwire,SaltWire Network,saltwire.com,NS,provincial,en,,,,Successor to chronicleherald.ca; Atlantic-wide brands,SaltWire
 cbcnorth,CBC North,cbc.ca/north,NT,provincial,en,lean_left,,https://www.cbc.ca/webfeed/rss/rss-canada-north,Split out of cbc by address; covers YT NT NU,CBC
 saultstar,Sault Star,saultstar.com,ON,local,en,lean_right,2026-10-17,,,Postmedia
 theobserver,Sarnia Observer,theobserver.ca,ON,local,en,lean_right,2026-10-17,,,Postmedia
-simcoereformer,Simcoe Reformer,simcoereformer.ca,ON,local,en,,2026-10-17,,Ground News rating unknown,Postmedia
+simcoereformer,Simcoe Reformer,simcoereformer.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
 stcatharinesstandard,St. Catharines Standard,stcatharinesstandard.ca,ON,local,en,lean_left,2026-10-17,,,Torstar
 stratfordbeaconherald,Stratford Beacon Herald,stratfordbeaconherald.com,ON,local,en,lean_right,2026-10-17,,,Postmedia
-thesudburystar,The Sudbury Star,thesudburystar.com,ON,local,en,,2026-10-17,,Ground News rating unknown,Postmedia
+thesudburystar,The Sudbury Star,thesudburystar.com,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
 chroniclejournal,Thunder Bay Chronicle-Journal,chroniclejournal.com,ON,local,en,center,2026-10-17,,,Continental Newspapers
-wellandtribune,Welland Tribune,wellandtribune.ca,ON,local,en,,2026-10-17,,Ground News rating unknown,Torstar
+wellandtribune,Welland Tribune,wellandtribune.ca,ON,local,en,lean_left,2026-10-19,,MBFC Left-Center,Torstar
 windsorstar,Windsor Star,windsorstar.com,ON,local,en,lean_right,2026-10-17,,,Postmedia
 journaldequebec,Journal de Québec,journaldequebec.com,QC,local,fr,right,2026-10-17,,French: needs separate tokenizer and stopwords; aligned with Journal de Montréal,Quebecor
 sherbrookerecord,Sherbrooke Record,sherbrookerecord.com,QC,local,en,,2026-10-17,,Ground News rating unknown,Alta Newspaper Group
@@ -43,15 +43,15 @@ lethbridgeherald,Lethbridge Herald,lethbridgeherald.com,AB,local,en,lean_left,20
 medicinehatnews,Medicine Hat News,medicinehatnews.com,AB,local,en,center,2026-10-17,,,Alta Newspaper Group
 kelownadailycourier,Kelowna Daily Courier,kelownadailycourier.ca,BC,local,en,center,2026-10-17,,,Continental Newspapers
 pentictonherald,Penticton Herald,pentictonherald.ca,BC,local,en,,,,rating not found yet; verify owner,
-timescolonist,Victoria Times Colonist,timescolonist.com,BC,local,en,,,,rating not found yet; verify owner,
+timescolonist,Victoria Times Colonist,timescolonist.com,BC,local,en,lean_left,2026-10-19,,MBFC Left-Center,
 brandonsun,Brandon Sun,brandonsun.com,MB,local,en,,,,rating not found yet; verify owner,
 acadienouvelle,L'Acadie Nouvelle,acadienouvelle.com,NB,local,fr,,,,rating not found yet,
-intelligencer,The Belleville Intelligencer,intelligencer.ca,ON,local,en,,,,rating not found yet,Postmedia
-brantfordexpositor,Brantford Expositor,brantfordexpositor.ca,ON,local,en,,,,rating not found yet; verify owner,Postmedia
-recorder,Brockville Recorder and Times,recorder.ca,ON,local,en,,,,rating not found yet,Postmedia
-reddeeradvocate,Red Deer Advocate,reddeeradvocate.com,AB,local,en,,,,rating not found yet; verify owner,
-chathamdailynews,Chatham Daily News,chathamdailynews.ca,ON,local,en,,,,rating not found yet,Postmedia
-yukonnews,Yukon News,yukon-news.com,YT,local,en,,,,"rating not found yet; below 300/quarter, kept on purpose (min 100)",
+intelligencer,The Belleville Intelligencer,intelligencer.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
+brantfordexpositor,Brantford Expositor,brantfordexpositor.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
+recorder,Brockville Recorder and Times,recorder.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
+reddeeradvocate,Red Deer Advocate,reddeeradvocate.com,AB,local,en,lean_left,2026-10-19,,MBFC Left-Center,
+chathamdailynews,Chatham Daily News,chathamdailynews.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
+yukonnews,Yukon News,yukon-news.com,YT,local,en,lean_left,2026-10-19,,MBFC Left-Center,
 whitehorsestar,Whitehorse Star,whitehorsestar.com,YT,local,en,,,,"closed 2024, data ends then; below 300/quarter, kept on purpose (min 100)",
 vocm,VOCM,vocm.com,NL,local,en,,,,rating not found yet; radio/online; Newfoundland's only usable outlet,
 standardfreeholder,Cornwall Standard-Freeholder,standard-freeholder.com,ON,local,en,,,,Postmedia; rating not found yet,Postmedia
