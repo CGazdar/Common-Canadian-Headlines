@@ -1,6 +1,3 @@
-"""Fill blank leanings in outlets.csv (never overwrites an existing value).
-    python apply_leanings2.py          dry run
-    python apply_leanings2.py --apply  write (backup: outlets.csv.bak)"""
 import csv, shutil, sys
 DATE = "2026-11-01"
 NEW = {
