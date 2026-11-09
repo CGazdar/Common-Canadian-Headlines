@@ -48,6 +48,13 @@ OUTLET_CITIES = {
     "thewhig": ("Kingston", 44.2312, -76.4860), "lfpress": ("London", 42.9849, -81.2453),
     "niagarafallsreview": ("Niagara Falls", 43.0896, -79.0849), "nugget": ("North Bay", 46.3091, -79.4608),
     "owensoundsuntimes": ("Owen Sound", 44.5690, -80.9435), "peterboroughexaminer": ("Peterborough", 44.3091, -78.3197),
+    "vicnews": ("Victoria", 48.4400, -123.3300), "nanaimobulletin": ("Nanaimo", 49.1659, -123.9401), 
+    "comoxvalleyrecord": ("Courtenay", 49.6866, -124.9936), "campbellrivermirror": ("Campbell River", 50.0163, -125.2733),
+    "vernonmorningstar": ("Vernon", 50.2670, -119.2720), "kelownacapnews": ("Kelowna", 49.8750, -119.4700),
+    "peacearchnews": ("White Rock", 49.0252, -122.8026), "mapleridgenews": ("Maple Ridge", 49.2194, -122.5984), "panow": ("Prince Albert", 53.2034, -105.7531),
+    "ctvatlantic": ("Halifax", 44.6488, -63.5752), "ctvwinnipeg": ("Winnipeg", 49.8951, -97.1384), "ctvregina": ("Regina", 50.4452, -104.6189),
+    "ctvsaskatoon": ("Saskatoon", 52.1332, -106.6700), "ctvedmonton": ("Edmonton", 53.5461, -113.4938), "ctvcalgary": ("Calgary", 51.0447, -114.0719),
+    "ctvbc": ("Vancouver", 49.2827, -123.1207),
 }
 
 

@@ -25,7 +25,7 @@ lapresse,La Presse,lapresse.ca,QC,provincial,fr,lean_left,2026-10-19,,MBFC Left-
 ledevoir,Le Devoir,ledevoir.com,QC,provincial,fr,center,2026-10-15,,French: needs separate tokenizer and stopwords,Le Devoir
 jdm,Journal de Montréal,journaldemontreal.com,QC,provincial,fr,right,2026-10-15,,French: needs separate tokenizer and stopwords,Quebecor
 chronicleherald,Chronicle Herald,thechronicleherald.ca,NS,provincial,en,lean_right,2026-10-19,,MBFC Right-Center (Chronicle Herald),Halifax Herald
-saltwire,SaltWire Network,saltwire.com,NS,provincial,en,,,,Successor to chronicleherald.ca; Atlantic-wide brands,SaltWire
+saltwire,SaltWire Network,saltwire.com,NS,provincial,en,lean_right,2026-11-01,,Successor to chronicleherald.ca; Atlantic-wide brands,SaltWire
 cbcnorth,CBC North,cbc.ca/north,NT,provincial,en,lean_left,,https://www.cbc.ca/webfeed/rss/rss-canada-north,Split out of cbc by address; covers YT NT NU,CBC
 saultstar,Sault Star,saultstar.com,ON,local,en,lean_right,2026-10-17,,,Postmedia
 theobserver,Sarnia Observer,theobserver.ca,ON,local,en,lean_right,2026-10-17,,,Postmedia
@@ -42,23 +42,43 @@ paherald,Prince Albert Daily Herald,paherald.sk.ca,SK,local,en,,2026-10-17,,Grou
 lethbridgeherald,Lethbridge Herald,lethbridgeherald.com,AB,local,en,lean_left,2026-10-17,,,Alta Newspaper Group
 medicinehatnews,Medicine Hat News,medicinehatnews.com,AB,local,en,center,2026-10-17,,,Alta Newspaper Group
 kelownadailycourier,Kelowna Daily Courier,kelownadailycourier.ca,BC,local,en,center,2026-10-17,,,Continental Newspapers
-pentictonherald,Penticton Herald,pentictonherald.ca,BC,local,en,,,,rating not found yet; verify owner,
+pentictonherald,Penticton Herald,pentictonherald.ca,BC,local,en,center,2026-11-01,,Ground News untracked bias,Continental Newspapers
 timescolonist,Victoria Times Colonist,timescolonist.com,BC,local,en,lean_left,2026-10-19,,MBFC Left-Center,
-brandonsun,Brandon Sun,brandonsun.com,MB,local,en,,,,rating not found yet; verify owner,
-acadienouvelle,L'Acadie Nouvelle,acadienouvelle.com,NB,local,fr,,,,rating not found yet,
+brandonsun,Brandon Sun,brandonsun.com,MB,local,en,center,2026-11-01,,Ground News moderate/center,FP Canadian Newspapers
+acadienouvelle,L'Acadie Nouvelle,acadienouvelle.com,NB,local,fr,center,2026-11-01,,Ground News untracked bias,Acadie Nouvelle
 intelligencer,The Belleville Intelligencer,intelligencer.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
 brantfordexpositor,Brantford Expositor,brantfordexpositor.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
 recorder,Brockville Recorder and Times,recorder.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
 reddeeradvocate,Red Deer Advocate,reddeeradvocate.com,AB,local,en,lean_left,2026-10-19,,MBFC Left-Center,
 chathamdailynews,Chatham Daily News,chathamdailynews.ca,ON,local,en,lean_right,2026-10-19,,MBFC Right-Center,Postmedia
 yukonnews,Yukon News,yukon-news.com,YT,local,en,lean_left,2026-10-19,,MBFC Left-Center,
-whitehorsestar,Whitehorse Star,whitehorsestar.com,YT,local,en,,,,"closed 2024, data ends then; below 300/quarter, kept on purpose (min 100)",
-vocm,VOCM,vocm.com,NL,local,en,,,,rating not found yet; radio/online; Newfoundland's only usable outlet,
-standardfreeholder,Cornwall Standard-Freeholder,standard-freeholder.com,ON,local,en,,,,Postmedia; rating not found yet,Postmedia
+whitehorsestar,Whitehorse Star,whitehorsestar.com,YT,local,en,,,,Center,
+vocm,VOCM,vocm.com,NL,local,en,center,2026-11-01,,Ground News Center-leaning,Stingray Group
+standardfreeholder,Cornwall Standard-Freeholder,standard-freeholder.com,ON,local,en,lean_right,2026-11-01,,Ground News / MBFC Right-Center,Postmedia
 thespec,The Hamilton Spectator,thespec.com,ON,local,en,lean_left,2026-10-17,,Ground News Lean Left,Torstar
-thewhig,The Kingston Whig-Standard,thewhig.com,ON,local,en,,,,Postmedia; rating not found yet,Postmedia
+thewhig,The Kingston Whig-Standard,thewhig.com,ON,local,en,center,2026-11-01,,Ground News Center-leaning,Postmedia
 lfpress,London Free Press,lfpress.com,ON,local,en,lean_right,2026-10-17,,MBFC Right-Center,Postmedia
 niagarafallsreview,Niagara Falls Review,niagarafallsreview.ca,ON,local,en,lean_left,2026-10-17,,MBFC Left-Center,Torstar
 nugget,North Bay Nugget,nugget.ca,ON,local,en,lean_right,2026-10-17,,MBFC Right-Center,Postmedia
 owensoundsuntimes,Owen Sound Sun Times,owensoundsuntimes.com,ON,local,en,lean_right,2026-10-17,,Rating page cites MBFC,Postmedia
 peterboroughexaminer,The Peterborough Examiner,thepeterboroughexaminer.com,ON,local,en,lean_left,2026-10-17,,Ground News Lean Left,Torstar
+citynews,CityNews,citynews.ca,ON,provincial,en,,,,Toronto-heavy; regional subdomains,Rogers
+tvanouvelles,TVA Nouvelles,tvanouvelles.ca,QC,provincial,fr,,,,,Quebecor
+radiocanada,Radio-Canada,ici.radio-canada.ca,NAT,national,fr,,,,French-language arm of CBC,CBC
+cp24,CP24,cp24.com,ON,provincial,en,,,,Toronto,Bell Media
+vicnews,Victoria News,vicnews.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+nanaimobulletin,Nanaimo News Bulletin,nanaimobulletin.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+comoxvalleyrecord,Comox Valley Record,comoxvalleyrecord.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+campbellrivermirror,Campbell River Mirror,campbellrivermirror.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+vernonmorningstar,Vernon Morning Star,vernonmorningstar.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+kelownacapnews,Kelowna Capital News,kelownacapnews.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+peacearchnews,Peace Arch News,peacearchnews.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+mapleridgenews,Maple Ridge-Pitt Meadows News,mapleridgenews.com,BC,local,en,lean_left,2026-11-01,,Black Press; rating not found yet,Black Press
+panow,paNOW,panow.com,SK,local,en,,,,Prince Albert; rating not found yet,
+ctvatlantic,CTV Atlantic,atlantic.ctvnews.ca,NS,local,en,center,2026-11-01,,Regional CTV site covering Atlantic Canada,Bell Media
+ctvwinnipeg,CTV Winnipeg,winnipeg.ctvnews.ca,MB,local,en,center,2026-11-01,,,Bell Media
+ctvregina,CTV Regina,regina.ctvnews.ca,SK,local,en,center,2026-11-01,,,Bell Media
+ctvsaskatoon,CTV Saskatoon,saskatoon.ctvnews.ca,SK,local,en,center,2026-11-01,,,Bell Media
+ctvedmonton,CTV Edmonton,edmonton.ctvnews.ca,AB,local,en,center,2026-11-01,,,Bell Media
+ctvcalgary,CTV Calgary,calgary.ctvnews.ca,AB,local,en,center,2026-11-01,,,Bell Media
+ctvbc,CTV British Columbia,bc.ctvnews.ca,BC,local,en,center,2026-11-01,,,Bell Media

@@ -46,6 +46,9 @@ def main():
     conn = connect()
     sync_outlets(conn)
     domain_to_outlet = dict(conn.execute("SELECT domain, outlet_id FROM outlets").fetchall())
+    from extra_domains import EXTRA_DOMAINS
+    known = set(domain_to_outlet.values())
+    domain_to_outlet.update({d: o for d, o in EXTRA_DOMAINS.items() if o in known})
     if args.outlets:
         keep = set(args.outlets.split(","))
         domain_to_outlet = {d: o for d, o in domain_to_outlet.items() if o in keep}

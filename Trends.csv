@@ -1,0 +1,1741 @@
+term,quarter,group,per_1000,outlets
+lockdown,2019-Q3,left,0.0,1
+lockdown,2019-Q4,left,0.444,3
+lockdown,2019-Q4,center,0.0,3
+lockdown,2019-Q4,right,0.264,12
+lockdown,2020-Q1,left,2.222,3
+lockdown,2020-Q1,center,0.904,3
+lockdown,2020-Q1,right,1.079,10
+lockdown,2020-Q2,left,5.778,3
+lockdown,2020-Q2,center,3.507,3
+lockdown,2020-Q2,right,6.001,10
+lockdown,2020-Q3,left,3.111,3
+lockdown,2020-Q3,center,2.419,3
+lockdown,2020-Q3,right,1.872,13
+lockdown,2020-Q4,left,9.333,2
+lockdown,2020-Q4,center,11.119,3
+lockdown,2020-Q4,right,12.328,13
+lockdown,2021-Q1,left,3.333,1
+lockdown,2021-Q1,center,3.111,3
+lockdown,2021-Q1,right,5.694,12
+lockdown,2021-Q2,left,4.667,1
+lockdown,2021-Q2,center,2.896,3
+lockdown,2021-Q2,right,2.951,12
+lockdown,2021-Q3,left,0.667,1
+lockdown,2021-Q3,center,1.807,2
+lockdown,2021-Q3,right,1.106,11
+lockdown,2021-Q4,left,1.333,1
+lockdown,2021-Q4,center,1.314,2
+lockdown,2021-Q4,right,1.852,9
+lockdown,2022-Q1,left,2.0,1
+lockdown,2022-Q1,center,0.667,2
+lockdown,2022-Q1,right,1.014,10
+lockdown,2022-Q2,left,0.667,1
+lockdown,2022-Q2,center,0.0,2
+lockdown,2022-Q2,right,0.302,10
+lockdown,2022-Q3,left,0.0,1
+lockdown,2022-Q3,center,0.0,2
+lockdown,2022-Q3,right,0.0,6
+lockdown,2022-Q4,left,0.0,1
+lockdown,2022-Q4,center,0.0,1
+lockdown,2022-Q4,right,0.0,6
+lockdown,2023-Q1,left,0.0,3
+lockdown,2023-Q1,center,0.0,2
+lockdown,2023-Q1,right,0.457,12
+lockdown,2023-Q2,left,0.667,3
+lockdown,2023-Q2,center,0.36,3
+lockdown,2023-Q2,right,0.37,12
+lockdown,2023-Q3,left,0.444,3
+lockdown,2023-Q3,center,0.0,3
+lockdown,2023-Q3,right,0.504,12
+lockdown,2023-Q4,left,1.0,2
+lockdown,2023-Q4,center,0.612,3
+lockdown,2023-Q4,right,0.134,12
+lockdown,2024-Q1,left,0.667,2
+lockdown,2024-Q1,center,0.0,3
+lockdown,2024-Q1,right,0.166,10
+lockdown,2024-Q2,left,0.333,2
+lockdown,2024-Q2,center,0.222,3
+lockdown,2024-Q2,right,0.331,10
+lockdown,2024-Q3,left,0.667,2
+lockdown,2024-Q3,center,0.0,3
+lockdown,2024-Q3,right,0.176,9
+lockdown,2024-Q4,left,0.333,2
+lockdown,2024-Q4,center,0.0,3
+lockdown,2024-Q4,right,0.22,10
+lockdown,2025-Q1,left,0.0,2
+lockdown,2025-Q1,center,0.0,3
+lockdown,2025-Q1,right,0.0,8
+lockdown,2025-Q2,left,1.0,2
+lockdown,2025-Q2,center,0.838,3
+lockdown,2025-Q2,right,0.12,6
+lockdown,2025-Q3,left,0.0,2
+lockdown,2025-Q3,center,0.0,3
+lockdown,2025-Q3,right,0.0,4
+lockdown,2025-Q4,left,0.333,2
+lockdown,2025-Q4,center,0.0,3
+lockdown,2025-Q4,right,0.439,7
+lockdown,2026-Q1,left,1.667,2
+lockdown,2026-Q1,center,0.719,3
+lockdown,2026-Q1,right,0.367,6
+lockdown,2026-Q2,left,0.0,2
+lockdown,2026-Q2,center,0.0,3
+lockdown,2026-Q2,right,0.0,6
+lockdown,2026-Q3,left,1.0,2
+lockdown,2026-Q3,center,0.0,2
+lockdown,2026-Q3,right,0.346,5
+lockdown,2026-Q4,left,2.418,2
+lockdown,2026-Q4,center,0.0,1
+mandates,2019-Q3,left,0.0,1
+mandates,2019-Q4,left,0.0,3
+mandates,2019-Q4,center,0.0,3
+mandates,2019-Q4,right,0.0,12
+mandates,2020-Q1,left,0.0,3
+mandates,2020-Q1,center,0.0,3
+mandates,2020-Q1,right,0.0,10
+mandates,2020-Q2,left,0.0,3
+mandates,2020-Q2,center,0.0,3
+mandates,2020-Q2,right,0.0,10
+mandates,2020-Q3,left,0.0,3
+mandates,2020-Q3,center,0.667,3
+mandates,2020-Q3,right,0.149,13
+mandates,2020-Q4,left,0.0,2
+mandates,2020-Q4,center,0.444,3
+mandates,2020-Q4,right,0.076,13
+mandates,2021-Q1,left,0.0,1
+mandates,2021-Q1,center,0.0,3
+mandates,2021-Q1,right,0.179,12
+mandates,2021-Q2,left,0.0,1
+mandates,2021-Q2,center,0.0,3
+mandates,2021-Q2,right,0.0,12
+mandates,2021-Q3,left,4.667,1
+mandates,2021-Q3,center,3.269,2
+mandates,2021-Q3,right,2.864,11
+mandates,2021-Q4,left,0.667,1
+mandates,2021-Q4,center,2.61,2
+mandates,2021-Q4,right,3.445,9
+mandates,2022-Q1,left,7.333,1
+mandates,2022-Q1,center,3.118,2
+mandates,2022-Q1,right,9.836,10
+mandates,2022-Q2,left,0.667,1
+mandates,2022-Q2,center,2.419,2
+mandates,2022-Q2,right,0.825,10
+mandates,2022-Q3,left,2.0,1
+mandates,2022-Q3,center,2.809,2
+mandates,2022-Q3,right,1.099,6
+mandates,2022-Q4,left,2.0,1
+mandates,2022-Q4,center,0.0,1
+mandates,2022-Q4,right,0.803,6
+mandates,2023-Q1,left,0.0,3
+mandates,2023-Q1,center,0.0,2
+mandates,2023-Q1,right,0.0,12
+mandates,2023-Q2,left,0.444,3
+mandates,2023-Q2,center,0.222,3
+mandates,2023-Q2,right,0.302,12
+mandates,2023-Q3,left,0.222,3
+mandates,2023-Q3,center,0.222,3
+mandates,2023-Q3,right,0.4,12
+mandates,2023-Q4,left,0.333,2
+mandates,2023-Q4,center,0.0,3
+mandates,2023-Q4,right,0.718,12
+mandates,2024-Q1,left,0.0,2
+mandates,2024-Q1,center,0.0,3
+mandates,2024-Q1,right,0.0,10
+mandates,2024-Q2,left,0.0,2
+mandates,2024-Q2,center,0.0,3
+mandates,2024-Q2,right,0.0,10
+mandates,2024-Q3,left,0.333,2
+mandates,2024-Q3,center,0.222,3
+mandates,2024-Q3,right,0.18,9
+mandates,2024-Q4,left,0.0,2
+mandates,2024-Q4,center,0.0,3
+mandates,2024-Q4,right,0.0,10
+mandates,2025-Q1,left,0.333,2
+mandates,2025-Q1,center,0.222,3
+mandates,2025-Q1,right,0.353,8
+mandates,2025-Q2,left,0.0,2
+mandates,2025-Q2,center,0.222,3
+mandates,2025-Q2,right,0.12,6
+mandates,2025-Q3,left,0.667,2
+mandates,2025-Q3,center,0.756,3
+mandates,2025-Q3,right,0.563,4
+mandates,2025-Q4,left,0.0,2
+mandates,2025-Q4,center,0.0,3
+mandates,2025-Q4,right,0.0,7
+mandates,2026-Q1,left,0.333,2
+mandates,2026-Q1,center,0.222,3
+mandates,2026-Q1,right,0.441,6
+mandates,2026-Q2,left,0.0,2
+mandates,2026-Q2,center,0.0,3
+mandates,2026-Q2,right,0.0,6
+mandates,2026-Q3,left,0.0,2
+mandates,2026-Q3,center,0.0,2
+mandates,2026-Q3,right,0.0,5
+mandates,2026-Q4,left,0.0,2
+mandates,2026-Q4,center,0.0,1
+freedom convoy,2019-Q3,left,0.0,1
+freedom convoy,2019-Q4,left,0.0,3
+freedom convoy,2019-Q4,center,0.0,3
+freedom convoy,2019-Q4,right,0.0,12
+freedom convoy,2020-Q1,left,0.0,3
+freedom convoy,2020-Q1,center,0.0,3
+freedom convoy,2020-Q1,right,0.0,10
+freedom convoy,2020-Q2,left,0.0,3
+freedom convoy,2020-Q2,center,0.0,3
+freedom convoy,2020-Q2,right,0.0,10
+freedom convoy,2020-Q3,left,0.0,3
+freedom convoy,2020-Q3,center,0.0,3
+freedom convoy,2020-Q3,right,0.0,13
+freedom convoy,2020-Q4,left,0.0,2
+freedom convoy,2020-Q4,center,0.0,3
+freedom convoy,2020-Q4,right,0.0,13
+freedom convoy,2021-Q1,left,0.0,1
+freedom convoy,2021-Q1,center,0.0,3
+freedom convoy,2021-Q1,right,0.0,12
+freedom convoy,2021-Q2,left,0.0,1
+freedom convoy,2021-Q2,center,0.0,3
+freedom convoy,2021-Q2,right,0.0,12
+freedom convoy,2021-Q3,left,0.0,1
+freedom convoy,2021-Q3,center,0.0,2
+freedom convoy,2021-Q3,right,0.0,11
+freedom convoy,2021-Q4,left,0.0,1
+freedom convoy,2021-Q4,center,0.0,2
+freedom convoy,2021-Q4,right,0.0,9
+freedom convoy,2022-Q1,left,0.667,1
+freedom convoy,2022-Q1,center,16.686,2
+freedom convoy,2022-Q1,right,12.695,10
+freedom convoy,2022-Q2,left,2.667,1
+freedom convoy,2022-Q2,center,1.962,2
+freedom convoy,2022-Q2,right,4.09,10
+freedom convoy,2022-Q3,left,2.0,1
+freedom convoy,2022-Q3,center,6.18,2
+freedom convoy,2022-Q3,right,2.57,6
+freedom convoy,2022-Q4,left,1.333,1
+freedom convoy,2022-Q4,center,46.17,1
+freedom convoy,2022-Q4,right,9.724,6
+freedom convoy,2023-Q1,left,0.222,3
+freedom convoy,2023-Q1,center,3.796,2
+freedom convoy,2023-Q1,right,1.388,12
+freedom convoy,2023-Q2,left,0.444,3
+freedom convoy,2023-Q2,center,1.109,3
+freedom convoy,2023-Q2,right,0.26,12
+freedom convoy,2023-Q3,left,0.444,3
+freedom convoy,2023-Q3,center,15.839,3
+freedom convoy,2023-Q3,right,1.361,12
+freedom convoy,2023-Q4,left,1.0,2
+freedom convoy,2023-Q4,center,13.331,3
+freedom convoy,2023-Q4,right,1.535,12
+freedom convoy,2024-Q1,left,0.333,2
+freedom convoy,2024-Q1,center,3.361,3
+freedom convoy,2024-Q1,right,0.728,10
+freedom convoy,2024-Q2,left,0.0,2
+freedom convoy,2024-Q2,center,0.4,3
+freedom convoy,2024-Q2,right,0.493,10
+freedom convoy,2024-Q3,left,0.667,2
+freedom convoy,2024-Q3,center,8.147,3
+freedom convoy,2024-Q3,right,0.996,9
+freedom convoy,2024-Q4,left,0.0,2
+freedom convoy,2024-Q4,center,0.765,3
+freedom convoy,2024-Q4,right,0.443,10
+freedom convoy,2025-Q1,left,0.333,2
+freedom convoy,2025-Q1,center,2.904,3
+freedom convoy,2025-Q1,right,0.446,8
+freedom convoy,2025-Q2,left,1.0,2
+freedom convoy,2025-Q2,center,1.987,3
+freedom convoy,2025-Q2,right,0.269,6
+freedom convoy,2025-Q3,left,0.0,2
+freedom convoy,2025-Q3,center,2.16,3
+freedom convoy,2025-Q3,right,1.554,4
+freedom convoy,2025-Q4,left,0.0,2
+freedom convoy,2025-Q4,center,1.259,3
+freedom convoy,2025-Q4,right,1.1,7
+freedom convoy,2026-Q1,left,0.0,2
+freedom convoy,2026-Q1,center,1.089,3
+freedom convoy,2026-Q1,right,0.367,6
+freedom convoy,2026-Q2,left,0.0,2
+freedom convoy,2026-Q2,center,0.0,3
+freedom convoy,2026-Q2,right,0.0,6
+freedom convoy,2026-Q3,left,0.333,2
+freedom convoy,2026-Q3,center,0.0,2
+freedom convoy,2026-Q3,right,0.155,5
+freedom convoy,2026-Q4,left,0.0,2
+freedom convoy,2026-Q4,center,0.0,1
+misinformation,2019-Q3,left,0.0,1
+misinformation,2019-Q4,left,0.222,3
+misinformation,2019-Q4,center,0.222,3
+misinformation,2019-Q4,right,0.602,12
+misinformation,2020-Q1,left,0.667,3
+misinformation,2020-Q1,center,0.67,3
+misinformation,2020-Q1,right,0.075,10
+misinformation,2020-Q2,left,0.444,3
+misinformation,2020-Q2,center,0.0,3
+misinformation,2020-Q2,right,0.496,10
+misinformation,2020-Q3,left,0.444,3
+misinformation,2020-Q3,center,0.0,3
+misinformation,2020-Q3,right,0.28,13
+misinformation,2020-Q4,left,0.667,2
+misinformation,2020-Q4,center,1.791,3
+misinformation,2020-Q4,right,0.12,13
+misinformation,2021-Q1,left,1.333,1
+misinformation,2021-Q1,center,1.054,3
+misinformation,2021-Q1,right,0.626,12
+misinformation,2021-Q2,left,0.667,1
+misinformation,2021-Q2,center,0.667,3
+misinformation,2021-Q2,right,0.578,12
+misinformation,2021-Q3,left,0.667,1
+misinformation,2021-Q3,center,1.205,2
+misinformation,2021-Q3,right,0.84,11
+misinformation,2021-Q4,left,0.0,1
+misinformation,2021-Q4,center,0.333,2
+misinformation,2021-Q4,right,0.775,9
+misinformation,2022-Q1,left,1.333,1
+misinformation,2022-Q1,center,0.0,2
+misinformation,2022-Q1,right,0.429,10
+misinformation,2022-Q2,left,0.0,1
+misinformation,2022-Q2,center,0.333,2
+misinformation,2022-Q2,right,0.984,10
+misinformation,2022-Q3,left,0.0,1
+misinformation,2022-Q3,center,0.0,2
+misinformation,2022-Q3,right,0.0,6
+misinformation,2022-Q4,left,0.0,1
+misinformation,2022-Q4,center,1.049,1
+misinformation,2022-Q4,right,0.402,6
+misinformation,2023-Q1,left,0.222,3
+misinformation,2023-Q1,center,2.105,2
+misinformation,2023-Q1,right,0.691,12
+misinformation,2023-Q2,left,0.0,3
+misinformation,2023-Q2,center,0.834,3
+misinformation,2023-Q2,right,1.103,12
+misinformation,2023-Q3,left,0.545,3
+misinformation,2023-Q3,center,0.572,3
+misinformation,2023-Q3,right,0.528,12
+misinformation,2023-Q4,left,0.333,2
+misinformation,2023-Q4,center,0.612,3
+misinformation,2023-Q4,right,0.452,12
+misinformation,2024-Q1,left,0.333,2
+misinformation,2024-Q1,center,0.0,3
+misinformation,2024-Q1,right,0.285,10
+misinformation,2024-Q2,left,0.0,2
+misinformation,2024-Q2,center,0.222,3
+misinformation,2024-Q2,right,0.14,10
+misinformation,2024-Q3,left,0.0,2
+misinformation,2024-Q3,center,0.0,3
+misinformation,2024-Q3,right,0.0,9
+misinformation,2024-Q4,left,0.0,2
+misinformation,2024-Q4,center,0.222,3
+misinformation,2024-Q4,right,0.918,10
+misinformation,2025-Q1,left,0.667,2
+misinformation,2025-Q1,center,1.416,3
+misinformation,2025-Q1,right,0.222,8
+misinformation,2025-Q2,left,0.667,2
+misinformation,2025-Q2,center,1.355,3
+misinformation,2025-Q2,right,0.269,6
+misinformation,2025-Q3,left,0.333,2
+misinformation,2025-Q3,center,0.667,3
+misinformation,2025-Q3,right,0.297,4
+misinformation,2025-Q4,left,0.0,2
+misinformation,2025-Q4,center,0.0,3
+misinformation,2025-Q4,right,0.0,7
+misinformation,2026-Q1,left,0.0,2
+misinformation,2026-Q1,center,0.0,3
+misinformation,2026-Q1,right,0.0,6
+misinformation,2026-Q2,left,0.333,2
+misinformation,2026-Q2,center,0.526,3
+misinformation,2026-Q2,right,0.0,6
+misinformation,2026-Q3,left,0.0,2
+misinformation,2026-Q3,center,0.333,2
+misinformation,2026-Q3,right,0.503,5
+misinformation,2026-Q4,left,0.0,2
+misinformation,2026-Q4,center,0.0,1
+woke,2019-Q3,left,0.0,1
+woke,2019-Q4,left,0.0,3
+woke,2019-Q4,center,0.0,3
+woke,2019-Q4,right,0.0,12
+woke,2020-Q1,left,0.0,3
+woke,2020-Q1,center,0.0,3
+woke,2020-Q1,right,0.0,10
+woke,2020-Q2,left,0.0,3
+woke,2020-Q2,center,0.0,3
+woke,2020-Q2,right,0.0,10
+woke,2020-Q3,left,0.0,3
+woke,2020-Q3,center,0.0,3
+woke,2020-Q3,right,0.0,13
+woke,2020-Q4,left,0.0,2
+woke,2020-Q4,center,0.0,3
+woke,2020-Q4,right,0.0,13
+woke,2021-Q1,left,0.0,1
+woke,2021-Q1,center,0.0,3
+woke,2021-Q1,right,0.117,12
+woke,2021-Q2,left,0.0,1
+woke,2021-Q2,center,0.0,3
+woke,2021-Q2,right,0.379,12
+woke,2021-Q3,left,0.0,1
+woke,2021-Q3,center,0.0,2
+woke,2021-Q3,right,0.646,11
+woke,2021-Q4,left,0.0,1
+woke,2021-Q4,center,0.0,2
+woke,2021-Q4,right,0.217,9
+woke,2022-Q1,left,0.0,1
+woke,2022-Q1,center,0.0,2
+woke,2022-Q1,right,0.0,10
+woke,2022-Q2,left,0.0,1
+woke,2022-Q2,center,0.0,2
+woke,2022-Q2,right,0.821,10
+woke,2022-Q3,left,0.0,1
+woke,2022-Q3,center,0.0,2
+woke,2022-Q3,right,0.0,6
+woke,2022-Q4,left,0.0,1
+woke,2022-Q4,center,0.0,1
+woke,2022-Q4,right,0.734,6
+woke,2023-Q1,left,0.0,3
+woke,2023-Q1,center,1.562,2
+woke,2023-Q1,right,0.696,12
+woke,2023-Q2,left,0.0,3
+woke,2023-Q2,center,0.582,3
+woke,2023-Q2,right,0.801,12
+woke,2023-Q3,left,0.0,3
+woke,2023-Q3,center,0.416,3
+woke,2023-Q3,right,0.447,12
+woke,2023-Q4,left,0.0,2
+woke,2023-Q4,center,0.0,3
+woke,2023-Q4,right,0.587,12
+woke,2024-Q1,left,0.0,2
+woke,2024-Q1,center,0.0,3
+woke,2024-Q1,right,0.364,10
+woke,2024-Q2,left,0.0,2
+woke,2024-Q2,center,0.0,3
+woke,2024-Q2,right,0.623,10
+woke,2024-Q3,left,0.0,2
+woke,2024-Q3,center,0.0,3
+woke,2024-Q3,right,0.0,9
+woke,2024-Q4,left,0.0,2
+woke,2024-Q4,center,0.0,3
+woke,2024-Q4,right,0.556,10
+woke,2025-Q1,left,0.0,2
+woke,2025-Q1,center,0.317,3
+woke,2025-Q1,right,0.686,8
+woke,2025-Q2,left,0.0,2
+woke,2025-Q2,center,0.378,3
+woke,2025-Q2,right,0.418,6
+woke,2025-Q3,left,0.0,2
+woke,2025-Q3,center,0.0,3
+woke,2025-Q3,right,1.537,4
+woke,2025-Q4,left,0.0,2
+woke,2025-Q4,center,0.0,3
+woke,2025-Q4,right,1.351,7
+woke,2026-Q1,left,0.0,2
+woke,2026-Q1,center,0.0,3
+woke,2026-Q1,right,1.613,6
+woke,2026-Q2,left,0.0,2
+woke,2026-Q2,center,0.0,3
+woke,2026-Q2,right,1.11,6
+woke,2026-Q3,left,0.0,2
+woke,2026-Q3,center,0.0,2
+woke,2026-Q3,right,1.619,5
+woke,2026-Q4,left,0.0,2
+woke,2026-Q4,center,0.0,1
+dei,2019-Q3,left,0.0,1
+dei,2019-Q4,left,0.0,3
+dei,2019-Q4,center,0.0,3
+dei,2019-Q4,right,0.0,12
+dei,2020-Q1,left,0.0,3
+dei,2020-Q1,center,0.0,3
+dei,2020-Q1,right,0.0,10
+dei,2020-Q2,left,0.0,3
+dei,2020-Q2,center,0.0,3
+dei,2020-Q2,right,0.0,10
+dei,2020-Q3,left,0.0,3
+dei,2020-Q3,center,0.0,3
+dei,2020-Q3,right,0.0,13
+dei,2020-Q4,left,0.0,2
+dei,2020-Q4,center,0.0,3
+dei,2020-Q4,right,0.0,13
+dei,2021-Q1,left,0.0,1
+dei,2021-Q1,center,0.0,3
+dei,2021-Q1,right,0.0,12
+dei,2021-Q2,left,0.0,1
+dei,2021-Q2,center,0.0,3
+dei,2021-Q2,right,0.0,12
+dei,2021-Q3,left,0.0,1
+dei,2021-Q3,center,0.0,2
+dei,2021-Q3,right,0.0,11
+dei,2021-Q4,left,0.0,1
+dei,2021-Q4,center,0.0,2
+dei,2021-Q4,right,0.0,9
+dei,2022-Q1,left,0.0,1
+dei,2022-Q1,center,0.0,2
+dei,2022-Q1,right,0.0,10
+dei,2022-Q2,left,0.0,1
+dei,2022-Q2,center,0.0,2
+dei,2022-Q2,right,0.0,10
+dei,2022-Q3,left,0.0,1
+dei,2022-Q3,center,0.0,2
+dei,2022-Q3,right,0.0,6
+dei,2022-Q4,left,0.0,1
+dei,2022-Q4,center,0.0,1
+dei,2022-Q4,right,0.0,6
+dei,2023-Q1,left,0.0,3
+dei,2023-Q1,center,0.0,2
+dei,2023-Q1,right,0.0,12
+dei,2023-Q2,left,0.0,3
+dei,2023-Q2,center,0.0,3
+dei,2023-Q2,right,0.0,12
+dei,2023-Q3,left,0.0,3
+dei,2023-Q3,center,0.0,3
+dei,2023-Q3,right,0.0,12
+dei,2023-Q4,left,0.0,2
+dei,2023-Q4,center,0.0,3
+dei,2023-Q4,right,0.0,12
+dei,2024-Q1,left,0.0,2
+dei,2024-Q1,center,0.0,3
+dei,2024-Q1,right,0.0,10
+dei,2024-Q2,left,0.0,2
+dei,2024-Q2,center,0.0,3
+dei,2024-Q2,right,0.407,10
+dei,2024-Q3,left,0.0,2
+dei,2024-Q3,center,0.222,3
+dei,2024-Q3,right,0.231,9
+dei,2024-Q4,left,0.0,2
+dei,2024-Q4,center,0.0,3
+dei,2024-Q4,right,0.401,10
+dei,2025-Q1,left,0.667,2
+dei,2025-Q1,center,0.222,3
+dei,2025-Q1,right,1.426,8
+dei,2025-Q2,left,0.333,2
+dei,2025-Q2,center,0.0,3
+dei,2025-Q2,right,0.596,6
+dei,2025-Q3,left,0.0,2
+dei,2025-Q3,center,0.0,3
+dei,2025-Q3,right,1.031,4
+dei,2025-Q4,left,0.0,2
+dei,2025-Q4,center,0.0,3
+dei,2025-Q4,right,0.776,7
+dei,2026-Q1,left,0.0,2
+dei,2026-Q1,center,0.272,3
+dei,2026-Q1,right,0.433,6
+dei,2026-Q2,left,0.0,2
+dei,2026-Q2,center,0.0,3
+dei,2026-Q2,right,0.608,6
+dei,2026-Q3,left,0.0,2
+dei,2026-Q3,center,0.0,2
+dei,2026-Q3,right,0.77,5
+dei,2026-Q4,left,0.0,2
+dei,2026-Q4,center,0.0,1
+systemic racism,2019-Q3,left,0.0,1
+systemic racism,2019-Q4,left,0.444,3
+systemic racism,2019-Q4,center,0.222,3
+systemic racism,2019-Q4,right,0.056,12
+systemic racism,2020-Q1,left,0.0,3
+systemic racism,2020-Q1,center,0.0,3
+systemic racism,2020-Q1,right,0.0,10
+systemic racism,2020-Q2,left,2.444,3
+systemic racism,2020-Q2,center,6.101,3
+systemic racism,2020-Q2,right,1.232,10
+systemic racism,2020-Q3,left,0.889,3
+systemic racism,2020-Q3,center,3.714,3
+systemic racism,2020-Q3,right,1.618,13
+systemic racism,2020-Q4,left,0.667,2
+systemic racism,2020-Q4,center,2.68,3
+systemic racism,2020-Q4,right,0.72,13
+systemic racism,2021-Q1,left,1.333,1
+systemic racism,2021-Q1,center,1.111,3
+systemic racism,2021-Q1,right,0.795,12
+systemic racism,2021-Q2,left,0.0,1
+systemic racism,2021-Q2,center,0.896,3
+systemic racism,2021-Q2,right,0.8,12
+systemic racism,2021-Q3,left,2.667,1
+systemic racism,2021-Q3,center,1.205,2
+systemic racism,2021-Q3,right,0.311,11
+systemic racism,2021-Q4,left,0.0,1
+systemic racism,2021-Q4,center,0.0,2
+systemic racism,2021-Q4,right,1.373,9
+systemic racism,2022-Q1,left,0.0,1
+systemic racism,2022-Q1,center,0.0,2
+systemic racism,2022-Q1,right,0.0,10
+systemic racism,2022-Q2,left,0.0,1
+systemic racism,2022-Q2,center,0.0,2
+systemic racism,2022-Q2,right,0.0,10
+systemic racism,2022-Q3,left,0.667,1
+systemic racism,2022-Q3,center,0.562,2
+systemic racism,2022-Q3,right,0.349,6
+systemic racism,2022-Q4,left,0.0,1
+systemic racism,2022-Q4,center,0.0,1
+systemic racism,2022-Q4,right,0.0,6
+systemic racism,2023-Q1,left,0.0,3
+systemic racism,2023-Q1,center,0.542,2
+systemic racism,2023-Q1,right,0.382,12
+systemic racism,2023-Q2,left,0.0,3
+systemic racism,2023-Q2,center,0.222,3
+systemic racism,2023-Q2,right,0.167,12
+systemic racism,2023-Q3,left,0.767,3
+systemic racism,2023-Q3,center,0.0,3
+systemic racism,2023-Q3,right,0.134,12
+systemic racism,2023-Q4,left,0.0,2
+systemic racism,2023-Q4,center,0.0,3
+systemic racism,2023-Q4,right,0.0,12
+systemic racism,2024-Q1,left,0.0,2
+systemic racism,2024-Q1,center,0.0,3
+systemic racism,2024-Q1,right,0.0,10
+systemic racism,2024-Q2,left,0.0,2
+systemic racism,2024-Q2,center,0.0,3
+systemic racism,2024-Q2,right,0.0,10
+systemic racism,2024-Q3,left,0.0,2
+systemic racism,2024-Q3,center,0.0,3
+systemic racism,2024-Q3,right,0.0,9
+systemic racism,2024-Q4,left,0.333,2
+systemic racism,2024-Q4,center,0.766,3
+systemic racism,2024-Q4,right,0.22,10
+systemic racism,2025-Q1,left,0.0,2
+systemic racism,2025-Q1,center,0.0,3
+systemic racism,2025-Q1,right,0.0,8
+systemic racism,2025-Q2,left,0.0,2
+systemic racism,2025-Q2,center,0.0,3
+systemic racism,2025-Q2,right,0.0,6
+systemic racism,2025-Q3,left,0.0,2
+systemic racism,2025-Q3,center,0.0,3
+systemic racism,2025-Q3,right,0.0,4
+systemic racism,2025-Q4,left,0.333,2
+systemic racism,2025-Q4,center,1.252,3
+systemic racism,2025-Q4,right,0.528,7
+systemic racism,2026-Q1,left,0.0,2
+systemic racism,2026-Q1,center,0.0,3
+systemic racism,2026-Q1,right,0.0,6
+systemic racism,2026-Q2,left,0.667,2
+systemic racism,2026-Q2,center,0.0,3
+systemic racism,2026-Q2,right,0.141,6
+systemic racism,2026-Q3,left,0.0,2
+systemic racism,2026-Q3,center,0.0,2
+systemic racism,2026-Q3,right,0.0,5
+systemic racism,2026-Q4,left,0.0,2
+systemic racism,2026-Q4,center,0.0,1
+reconciliation,2019-Q3,left,0.0,1
+reconciliation,2019-Q4,left,1.065,3
+reconciliation,2019-Q4,center,0.667,3
+reconciliation,2019-Q4,right,0.958,12
+reconciliation,2020-Q1,left,1.556,3
+reconciliation,2020-Q1,center,3.512,3
+reconciliation,2020-Q1,right,1.21,10
+reconciliation,2020-Q2,left,0.222,3
+reconciliation,2020-Q2,center,1.321,3
+reconciliation,2020-Q2,right,0.521,10
+reconciliation,2020-Q3,left,0.0,3
+reconciliation,2020-Q3,center,2.21,3
+reconciliation,2020-Q3,right,0.314,13
+reconciliation,2020-Q4,left,1.0,2
+reconciliation,2020-Q4,center,1.016,3
+reconciliation,2020-Q4,right,0.502,13
+reconciliation,2021-Q1,left,0.0,1
+reconciliation,2021-Q1,center,0.444,3
+reconciliation,2021-Q1,right,1.295,12
+reconciliation,2021-Q2,left,1.333,1
+reconciliation,2021-Q2,center,2.237,3
+reconciliation,2021-Q2,right,0.537,12
+reconciliation,2021-Q3,left,6.0,1
+reconciliation,2021-Q3,center,18.241,2
+reconciliation,2021-Q3,right,4.631,11
+reconciliation,2021-Q4,left,0.0,1
+reconciliation,2021-Q4,center,8.572,2
+reconciliation,2021-Q4,right,2.849,9
+reconciliation,2022-Q1,left,2.0,1
+reconciliation,2022-Q1,center,2.49,2
+reconciliation,2022-Q1,right,0.851,10
+reconciliation,2022-Q2,left,4.0,1
+reconciliation,2022-Q2,center,8.924,2
+reconciliation,2022-Q2,right,2.207,10
+reconciliation,2022-Q3,left,4.667,1
+reconciliation,2022-Q3,center,4.474,2
+reconciliation,2022-Q3,right,4.111,6
+reconciliation,2022-Q4,left,3.333,1
+reconciliation,2022-Q4,center,2.099,1
+reconciliation,2022-Q4,right,2.06,6
+reconciliation,2023-Q1,left,0.444,3
+reconciliation,2023-Q1,center,0.542,2
+reconciliation,2023-Q1,right,0.234,12
+reconciliation,2023-Q2,left,0.444,3
+reconciliation,2023-Q2,center,1.638,3
+reconciliation,2023-Q2,right,0.44,12
+reconciliation,2023-Q3,left,2.889,3
+reconciliation,2023-Q3,center,6.471,3
+reconciliation,2023-Q3,right,3.172,12
+reconciliation,2023-Q4,left,1.333,2
+reconciliation,2023-Q4,center,3.18,3
+reconciliation,2023-Q4,right,1.393,12
+reconciliation,2024-Q1,left,0.667,2
+reconciliation,2024-Q1,center,0.563,3
+reconciliation,2024-Q1,right,0.638,10
+reconciliation,2024-Q2,left,0.667,2
+reconciliation,2024-Q2,center,2.403,3
+reconciliation,2024-Q2,right,0.929,10
+reconciliation,2024-Q3,left,2.0,2
+reconciliation,2024-Q3,center,5.272,3
+reconciliation,2024-Q3,right,2.933,9
+reconciliation,2024-Q4,left,0.333,2
+reconciliation,2024-Q4,center,1.791,3
+reconciliation,2024-Q4,right,1.229,10
+reconciliation,2025-Q1,left,0.0,2
+reconciliation,2025-Q1,center,0.444,3
+reconciliation,2025-Q1,right,0.0,8
+reconciliation,2025-Q2,left,1.0,2
+reconciliation,2025-Q2,center,4.042,3
+reconciliation,2025-Q2,right,0.912,6
+reconciliation,2025-Q3,left,1.333,2
+reconciliation,2025-Q3,center,3.834,3
+reconciliation,2025-Q3,right,2.266,4
+reconciliation,2025-Q4,left,0.667,2
+reconciliation,2025-Q4,center,0.54,3
+reconciliation,2025-Q4,right,2.655,7
+reconciliation,2026-Q1,left,1.0,2
+reconciliation,2026-Q1,center,1.27,3
+reconciliation,2026-Q1,right,0.255,6
+reconciliation,2026-Q2,left,1.333,2
+reconciliation,2026-Q2,center,0.531,3
+reconciliation,2026-Q2,right,0.773,6
+reconciliation,2026-Q3,left,2.0,2
+reconciliation,2026-Q3,center,1.918,2
+reconciliation,2026-Q3,right,2.088,5
+reconciliation,2026-Q4,left,4.418,2
+reconciliation,2026-Q4,center,0.0,1
+residential schools,2019-Q3,left,0.667,1
+residential schools,2019-Q4,left,0.222,3
+residential schools,2019-Q4,center,0.222,3
+residential schools,2019-Q4,right,0.221,12
+residential schools,2020-Q1,left,0.0,3
+residential schools,2020-Q1,center,0.0,3
+residential schools,2020-Q1,right,0.0,10
+residential schools,2020-Q2,left,0.0,3
+residential schools,2020-Q2,center,0.0,3
+residential schools,2020-Q2,right,0.0,10
+residential schools,2020-Q3,left,0.222,3
+residential schools,2020-Q3,center,1.752,3
+residential schools,2020-Q3,right,0.208,13
+residential schools,2020-Q4,left,1.333,2
+residential schools,2020-Q4,center,1.451,3
+residential schools,2020-Q4,right,0.336,13
+residential schools,2021-Q1,left,0.0,1
+residential schools,2021-Q1,center,0.832,3
+residential schools,2021-Q1,right,0.213,12
+residential schools,2021-Q2,left,3.333,1
+residential schools,2021-Q2,center,11.5,3
+residential schools,2021-Q2,right,3.704,12
+residential schools,2021-Q3,left,2.0,1
+residential schools,2021-Q3,center,3.743,2
+residential schools,2021-Q3,right,3.444,11
+residential schools,2021-Q4,left,0.0,1
+residential schools,2021-Q4,center,3.238,2
+residential schools,2021-Q4,right,0.586,9
+residential schools,2022-Q1,left,0.0,1
+residential schools,2022-Q1,center,3.275,2
+residential schools,2022-Q1,right,0.0,10
+residential schools,2022-Q2,left,0.0,1
+residential schools,2022-Q2,center,3.381,2
+residential schools,2022-Q2,right,1.79,10
+residential schools,2022-Q3,left,1.333,1
+residential schools,2022-Q3,center,6.18,2
+residential schools,2022-Q3,right,1.438,6
+residential schools,2022-Q4,left,1.333,1
+residential schools,2022-Q4,center,2.099,1
+residential schools,2022-Q4,right,0.301,6
+residential schools,2023-Q1,left,0.312,3
+residential schools,2023-Q1,center,4.338,2
+residential schools,2023-Q1,right,0.218,12
+residential schools,2023-Q2,left,0.222,3
+residential schools,2023-Q2,center,1.17,3
+residential schools,2023-Q2,right,0.124,12
+residential schools,2023-Q3,left,0.222,3
+residential schools,2023-Q3,center,0.988,3
+residential schools,2023-Q3,right,0.421,12
+residential schools,2023-Q4,left,0.0,2
+residential schools,2023-Q4,center,1.572,3
+residential schools,2023-Q4,right,0.477,12
+residential schools,2024-Q1,left,0.333,2
+residential schools,2024-Q1,center,0.563,3
+residential schools,2024-Q1,right,0.0,10
+residential schools,2024-Q2,left,0.0,2
+residential schools,2024-Q2,center,0.0,3
+residential schools,2024-Q2,right,0.0,10
+residential schools,2024-Q3,left,0.333,2
+residential schools,2024-Q3,center,0.0,3
+residential schools,2024-Q3,right,0.508,9
+residential schools,2024-Q4,left,0.667,2
+residential schools,2024-Q4,center,1.63,3
+residential schools,2024-Q4,right,0.0,10
+residential schools,2025-Q1,left,0.0,2
+residential schools,2025-Q1,center,0.0,3
+residential schools,2025-Q1,right,0.0,8
+residential schools,2025-Q2,left,0.333,2
+residential schools,2025-Q2,center,0.378,3
+residential schools,2025-Q2,right,0.269,6
+residential schools,2025-Q3,left,0.333,2
+residential schools,2025-Q3,center,1.302,3
+residential schools,2025-Q3,right,0.0,4
+residential schools,2025-Q4,left,0.0,2
+residential schools,2025-Q4,center,0.0,3
+residential schools,2025-Q4,right,0.0,7
+residential schools,2026-Q1,left,0.0,2
+residential schools,2026-Q1,center,0.0,3
+residential schools,2026-Q1,right,0.0,6
+residential schools,2026-Q2,left,0.0,2
+residential schools,2026-Q2,center,0.0,3
+residential schools,2026-Q2,right,0.0,6
+residential schools,2026-Q3,left,0.0,2
+residential schools,2026-Q3,center,0.0,2
+residential schools,2026-Q3,right,0.0,5
+residential schools,2026-Q4,left,0.0,2
+residential schools,2026-Q4,center,0.0,1
+transgender,2019-Q3,left,0.0,1
+transgender,2019-Q4,left,0.222,3
+transgender,2019-Q4,center,0.222,3
+transgender,2019-Q4,right,0.343,12
+transgender,2020-Q1,left,0.0,3
+transgender,2020-Q1,center,0.0,3
+transgender,2020-Q1,right,0.0,10
+transgender,2020-Q2,left,0.0,3
+transgender,2020-Q2,center,0.0,3
+transgender,2020-Q2,right,0.0,10
+transgender,2020-Q3,left,0.667,3
+transgender,2020-Q3,center,1.295,3
+transgender,2020-Q3,right,0.625,13
+transgender,2020-Q4,left,0.667,2
+transgender,2020-Q4,center,0.0,3
+transgender,2020-Q4,right,0.215,13
+transgender,2021-Q1,left,0.0,1
+transgender,2021-Q1,center,0.0,3
+transgender,2021-Q1,right,0.0,12
+transgender,2021-Q2,left,0.0,1
+transgender,2021-Q2,center,0.0,3
+transgender,2021-Q2,right,0.0,12
+transgender,2021-Q3,left,0.0,1
+transgender,2021-Q3,center,0.0,2
+transgender,2021-Q3,right,0.0,11
+transgender,2021-Q4,left,0.0,1
+transgender,2021-Q4,center,0.0,2
+transgender,2021-Q4,right,0.0,9
+transgender,2022-Q1,left,0.0,1
+transgender,2022-Q1,center,0.0,2
+transgender,2022-Q1,right,0.0,10
+transgender,2022-Q2,left,1.333,1
+transgender,2022-Q2,center,1.962,2
+transgender,2022-Q2,right,0.0,10
+transgender,2022-Q3,left,0.0,1
+transgender,2022-Q3,center,0.0,2
+transgender,2022-Q3,right,0.0,6
+transgender,2022-Q4,left,0.0,1
+transgender,2022-Q4,center,0.0,1
+transgender,2022-Q4,right,0.0,6
+transgender,2023-Q1,left,0.222,3
+transgender,2023-Q1,center,0.542,2
+transgender,2023-Q1,right,0.271,12
+transgender,2023-Q2,left,0.0,3
+transgender,2023-Q2,center,0.36,3
+transgender,2023-Q2,right,0.371,12
+transgender,2023-Q3,left,0.222,3
+transgender,2023-Q3,center,0.572,3
+transgender,2023-Q3,right,0.575,12
+transgender,2023-Q4,left,1.0,2
+transgender,2023-Q4,center,0.0,3
+transgender,2023-Q4,right,0.282,12
+transgender,2024-Q1,left,1.0,2
+transgender,2024-Q1,center,5.023,3
+transgender,2024-Q1,right,1.908,10
+transgender,2024-Q2,left,0.0,2
+transgender,2024-Q2,center,0.347,3
+transgender,2024-Q2,right,0.298,10
+transgender,2024-Q3,left,0.333,2
+transgender,2024-Q3,center,0.222,3
+transgender,2024-Q3,right,0.18,9
+transgender,2024-Q4,left,0.333,2
+transgender,2024-Q4,center,1.655,3
+transgender,2024-Q4,right,2.791,10
+transgender,2025-Q1,left,0.333,2
+transgender,2025-Q1,center,0.539,3
+transgender,2025-Q1,right,0.0,8
+transgender,2025-Q2,left,0.0,2
+transgender,2025-Q2,center,1.283,3
+transgender,2025-Q2,right,0.0,6
+transgender,2025-Q3,left,1.0,2
+transgender,2025-Q3,center,0.889,3
+transgender,2025-Q3,right,0.642,4
+transgender,2025-Q4,left,1.667,2
+transgender,2025-Q4,center,0.534,3
+transgender,2025-Q4,right,0.429,7
+transgender,2026-Q1,left,0.667,2
+transgender,2026-Q1,center,0.222,3
+transgender,2026-Q1,right,0.4,6
+transgender,2026-Q2,left,0.0,2
+transgender,2026-Q2,center,0.0,3
+transgender,2026-Q2,right,0.0,6
+transgender,2026-Q3,left,0.0,2
+transgender,2026-Q3,center,0.333,2
+transgender,2026-Q3,right,0.577,5
+transgender,2026-Q4,left,0.0,2
+transgender,2026-Q4,center,0.0,1
+carbon tax,2019-Q3,left,1.333,1
+carbon tax,2019-Q4,left,1.556,3
+carbon tax,2019-Q4,center,4.843,3
+carbon tax,2019-Q4,right,1.909,12
+carbon tax,2020-Q1,left,0.889,3
+carbon tax,2020-Q1,center,3.414,3
+carbon tax,2020-Q1,right,3.616,10
+carbon tax,2020-Q2,left,0.0,3
+carbon tax,2020-Q2,center,1.087,3
+carbon tax,2020-Q2,right,0.721,10
+carbon tax,2020-Q3,left,0.0,3
+carbon tax,2020-Q3,center,1.765,3
+carbon tax,2020-Q3,right,0.709,13
+carbon tax,2020-Q4,left,1.0,2
+carbon tax,2020-Q4,center,2.34,3
+carbon tax,2020-Q4,right,1.867,13
+carbon tax,2021-Q1,left,2.667,1
+carbon tax,2021-Q1,center,3.384,3
+carbon tax,2021-Q1,right,3.53,12
+carbon tax,2021-Q2,left,0.0,1
+carbon tax,2021-Q2,center,0.222,3
+carbon tax,2021-Q2,right,1.654,12
+carbon tax,2021-Q3,left,0.0,1
+carbon tax,2021-Q3,center,0.0,2
+carbon tax,2021-Q3,right,0.333,11
+carbon tax,2021-Q4,left,0.0,1
+carbon tax,2021-Q4,center,0.0,2
+carbon tax,2021-Q4,right,0.0,9
+carbon tax,2022-Q1,left,0.667,1
+carbon tax,2022-Q1,center,0.824,2
+carbon tax,2022-Q1,right,1.741,10
+carbon tax,2022-Q2,left,0.667,1
+carbon tax,2022-Q2,center,3.257,2
+carbon tax,2022-Q2,right,1.222,10
+carbon tax,2022-Q3,left,0.667,1
+carbon tax,2022-Q3,center,1.114,2
+carbon tax,2022-Q3,right,1.382,6
+carbon tax,2022-Q4,left,0.667,1
+carbon tax,2022-Q4,center,2.099,1
+carbon tax,2022-Q4,right,1.7,6
+carbon tax,2023-Q1,left,0.222,3
+carbon tax,2023-Q1,center,0.0,2
+carbon tax,2023-Q1,right,1.077,12
+carbon tax,2023-Q2,left,0.667,3
+carbon tax,2023-Q2,center,0.804,3
+carbon tax,2023-Q2,right,2.334,12
+carbon tax,2023-Q3,left,1.211,3
+carbon tax,2023-Q3,center,0.572,3
+carbon tax,2023-Q3,right,0.663,12
+carbon tax,2023-Q4,left,4.0,2
+carbon tax,2023-Q4,center,10.229,3
+carbon tax,2023-Q4,right,8.673,12
+carbon tax,2024-Q1,left,2.667,2
+carbon tax,2024-Q1,center,9.605,3
+carbon tax,2024-Q1,right,5.036,10
+carbon tax,2024-Q2,left,1.0,2
+carbon tax,2024-Q2,center,8.314,3
+carbon tax,2024-Q2,right,6.18,10
+carbon tax,2024-Q3,left,1.0,2
+carbon tax,2024-Q3,center,2.563,3
+carbon tax,2024-Q3,right,5.077,9
+carbon tax,2024-Q4,left,0.333,2
+carbon tax,2024-Q4,center,0.765,3
+carbon tax,2024-Q4,right,2.908,10
+carbon tax,2025-Q1,left,1.333,2
+carbon tax,2025-Q1,center,6.684,3
+carbon tax,2025-Q1,right,8.986,8
+carbon tax,2025-Q2,left,2.333,2
+carbon tax,2025-Q2,center,2.893,3
+carbon tax,2025-Q2,right,7.678,6
+carbon tax,2025-Q3,left,0.0,2
+carbon tax,2025-Q3,center,0.444,3
+carbon tax,2025-Q3,right,1.449,4
+carbon tax,2025-Q4,left,0.333,2
+carbon tax,2025-Q4,center,0.0,3
+carbon tax,2025-Q4,right,0.323,7
+carbon tax,2026-Q1,left,0.0,2
+carbon tax,2026-Q1,center,0.0,3
+carbon tax,2026-Q1,right,0.333,6
+carbon tax,2026-Q2,left,0.0,2
+carbon tax,2026-Q2,center,0.0,3
+carbon tax,2026-Q2,right,1.896,6
+carbon tax,2026-Q3,left,0.0,2
+carbon tax,2026-Q3,center,0.0,2
+carbon tax,2026-Q3,right,0.0,5
+carbon tax,2026-Q4,left,0.0,2
+carbon tax,2026-Q4,center,0.0,1
+affordability,2019-Q3,left,0.0,1
+affordability,2019-Q4,left,1.509,3
+affordability,2019-Q4,center,0.444,3
+affordability,2019-Q4,right,0.259,12
+affordability,2020-Q1,left,0.667,3
+affordability,2020-Q1,center,0.222,3
+affordability,2020-Q1,right,0.0,10
+affordability,2020-Q2,left,0.0,3
+affordability,2020-Q2,center,0.0,3
+affordability,2020-Q2,right,0.0,10
+affordability,2020-Q3,left,0.0,3
+affordability,2020-Q3,center,0.0,3
+affordability,2020-Q3,right,0.0,13
+affordability,2020-Q4,left,0.0,2
+affordability,2020-Q4,center,0.0,3
+affordability,2020-Q4,right,0.0,13
+affordability,2021-Q1,left,0.0,1
+affordability,2021-Q1,center,0.0,3
+affordability,2021-Q1,right,0.0,12
+affordability,2021-Q2,left,0.0,1
+affordability,2021-Q2,center,0.0,3
+affordability,2021-Q2,right,0.517,12
+affordability,2021-Q3,left,0.667,1
+affordability,2021-Q3,center,2.41,2
+affordability,2021-Q3,right,0.431,11
+affordability,2021-Q4,left,0.667,1
+affordability,2021-Q4,center,0.0,2
+affordability,2021-Q4,right,0.408,9
+affordability,2022-Q1,left,0.0,1
+affordability,2022-Q1,center,0.49,2
+affordability,2022-Q1,right,0.61,10
+affordability,2022-Q2,left,3.333,1
+affordability,2022-Q2,center,1.962,2
+affordability,2022-Q2,right,1.945,10
+affordability,2022-Q3,left,0.667,1
+affordability,2022-Q3,center,2.809,2
+affordability,2022-Q3,right,1.767,6
+affordability,2022-Q4,left,1.333,1
+affordability,2022-Q4,center,3.148,1
+affordability,2022-Q4,right,1.568,6
+affordability,2023-Q1,left,0.935,3
+affordability,2023-Q1,center,0.542,2
+affordability,2023-Q1,right,2.323,12
+affordability,2023-Q2,left,1.333,3
+affordability,2023-Q2,center,0.39,3
+affordability,2023-Q2,right,1.391,12
+affordability,2023-Q3,left,0.989,3
+affordability,2023-Q3,center,4.182,3
+affordability,2023-Q3,right,1.318,12
+affordability,2023-Q4,left,0.333,2
+affordability,2023-Q4,center,1.496,3
+affordability,2023-Q4,right,1.658,12
+affordability,2024-Q1,left,1.0,2
+affordability,2024-Q1,center,2.46,3
+affordability,2024-Q1,right,1.137,10
+affordability,2024-Q2,left,0.667,2
+affordability,2024-Q2,center,1.77,3
+affordability,2024-Q2,right,0.634,10
+affordability,2024-Q3,left,1.0,2
+affordability,2024-Q3,center,1.452,3
+affordability,2024-Q3,right,0.29,9
+affordability,2024-Q4,left,2.667,2
+affordability,2024-Q4,center,2.496,3
+affordability,2024-Q4,right,1.044,10
+affordability,2025-Q1,left,0.667,2
+affordability,2025-Q1,center,0.655,3
+affordability,2025-Q1,right,0.407,8
+affordability,2025-Q2,left,0.667,2
+affordability,2025-Q2,center,0.6,3
+affordability,2025-Q2,right,1.068,6
+affordability,2025-Q3,left,0.333,2
+affordability,2025-Q3,center,0.0,3
+affordability,2025-Q3,right,0.428,4
+affordability,2025-Q4,left,1.0,2
+affordability,2025-Q4,center,1.259,3
+affordability,2025-Q4,right,4.105,7
+affordability,2026-Q1,left,2.0,2
+affordability,2026-Q1,center,1.756,3
+affordability,2026-Q1,right,1.239,6
+affordability,2026-Q2,left,0.333,2
+affordability,2026-Q2,center,2.146,3
+affordability,2026-Q2,right,0.757,6
+affordability,2026-Q3,left,2.0,2
+affordability,2026-Q3,center,1.479,2
+affordability,2026-Q3,right,0.657,5
+affordability,2026-Q4,left,1.667,2
+affordability,2026-Q4,center,0.0,1
+inflation,2019-Q3,left,0.0,1
+inflation,2019-Q4,left,0.0,3
+inflation,2019-Q4,center,0.0,3
+inflation,2019-Q4,right,0.0,12
+inflation,2020-Q1,left,0.0,3
+inflation,2020-Q1,center,0.0,3
+inflation,2020-Q1,right,0.0,10
+inflation,2020-Q2,left,0.0,3
+inflation,2020-Q2,center,2.162,3
+inflation,2020-Q2,right,0.358,10
+inflation,2020-Q3,left,0.0,3
+inflation,2020-Q3,center,0.0,3
+inflation,2020-Q3,right,0.0,13
+inflation,2020-Q4,left,0.0,2
+inflation,2020-Q4,center,0.0,3
+inflation,2020-Q4,right,0.0,13
+inflation,2021-Q1,left,0.0,1
+inflation,2021-Q1,center,0.0,3
+inflation,2021-Q1,right,0.0,12
+inflation,2021-Q2,left,0.0,1
+inflation,2021-Q2,center,0.0,3
+inflation,2021-Q2,right,0.538,12
+inflation,2021-Q3,left,0.0,1
+inflation,2021-Q3,center,1.538,2
+inflation,2021-Q3,right,1.061,11
+inflation,2021-Q4,left,1.333,1
+inflation,2021-Q4,center,4.886,2
+inflation,2021-Q4,right,3.987,9
+inflation,2022-Q1,left,2.0,1
+inflation,2022-Q1,center,3.784,2
+inflation,2022-Q1,right,5.475,10
+inflation,2022-Q2,left,4.667,1
+inflation,2022-Q2,center,12.229,2
+inflation,2022-Q2,right,6.198,10
+inflation,2022-Q3,left,4.0,1
+inflation,2022-Q3,center,12.901,2
+inflation,2022-Q3,right,11.93,6
+inflation,2022-Q4,left,4.667,1
+inflation,2022-Q4,center,11.542,1
+inflation,2022-Q4,right,8.46,6
+inflation,2023-Q1,left,2.917,3
+inflation,2023-Q1,center,7.592,2
+inflation,2023-Q1,right,3.855,12
+inflation,2023-Q2,left,2.0,3
+inflation,2023-Q2,center,0.972,3
+inflation,2023-Q2,right,3.435,12
+inflation,2023-Q3,left,1.556,3
+inflation,2023-Q3,center,3.762,3
+inflation,2023-Q3,right,5.787,12
+inflation,2023-Q4,left,1.333,2
+inflation,2023-Q4,center,5.648,3
+inflation,2023-Q4,right,3.445,12
+inflation,2024-Q1,left,2.0,2
+inflation,2024-Q1,center,2.915,3
+inflation,2024-Q1,right,4.108,10
+inflation,2024-Q2,left,2.667,2
+inflation,2024-Q2,center,5.39,3
+inflation,2024-Q2,right,4.719,10
+inflation,2024-Q3,left,1.0,2
+inflation,2024-Q3,center,2.785,3
+inflation,2024-Q3,right,4.509,9
+inflation,2024-Q4,left,2.0,2
+inflation,2024-Q4,center,3.579,3
+inflation,2024-Q4,right,1.941,10
+inflation,2025-Q1,left,0.333,2
+inflation,2025-Q1,center,1.405,3
+inflation,2025-Q1,right,0.892,8
+inflation,2025-Q2,left,1.333,2
+inflation,2025-Q2,center,0.0,3
+inflation,2025-Q2,right,1.55,6
+inflation,2025-Q3,left,0.667,2
+inflation,2025-Q3,center,0.934,3
+inflation,2025-Q3,right,0.603,4
+inflation,2025-Q4,left,1.0,2
+inflation,2025-Q4,center,0.318,3
+inflation,2025-Q4,right,2.399,7
+inflation,2026-Q1,left,0.667,2
+inflation,2026-Q1,center,0.817,3
+inflation,2026-Q1,right,0.952,6
+inflation,2026-Q2,left,0.333,2
+inflation,2026-Q2,center,0.304,3
+inflation,2026-Q2,right,1.141,6
+inflation,2026-Q3,left,1.333,2
+inflation,2026-Q3,center,0.813,2
+inflation,2026-Q3,right,0.657,5
+inflation,2026-Q4,left,2.418,2
+inflation,2026-Q4,center,0.0,1
+pipeline,2019-Q3,left,0.0,1
+pipeline,2019-Q4,left,3.065,3
+pipeline,2019-Q4,center,1.333,3
+pipeline,2019-Q4,right,1.899,12
+pipeline,2020-Q1,left,4.444,3
+pipeline,2020-Q1,center,17.563,3
+pipeline,2020-Q1,right,4.622,10
+pipeline,2020-Q2,left,1.111,3
+pipeline,2020-Q2,center,0.444,3
+pipeline,2020-Q2,right,0.411,10
+pipeline,2020-Q3,left,2.0,3
+pipeline,2020-Q3,center,1.098,3
+pipeline,2020-Q3,right,1.315,13
+pipeline,2020-Q4,left,0.333,2
+pipeline,2020-Q4,center,0.667,3
+pipeline,2020-Q4,right,0.708,13
+pipeline,2021-Q1,left,0.667,1
+pipeline,2021-Q1,center,2.165,3
+pipeline,2021-Q1,right,1.12,12
+pipeline,2021-Q2,left,2.0,1
+pipeline,2021-Q2,center,2.681,3
+pipeline,2021-Q2,right,1.462,12
+pipeline,2021-Q3,left,2.667,1
+pipeline,2021-Q3,center,1.269,2
+pipeline,2021-Q3,right,0.737,11
+pipeline,2021-Q4,left,2.0,1
+pipeline,2021-Q4,center,2.295,2
+pipeline,2021-Q4,right,1.739,9
+pipeline,2022-Q1,left,2.0,1
+pipeline,2022-Q1,center,0.98,2
+pipeline,2022-Q1,right,0.152,10
+pipeline,2022-Q2,left,0.0,1
+pipeline,2022-Q2,center,2.172,2
+pipeline,2022-Q2,right,0.29,10
+pipeline,2022-Q3,left,0.667,1
+pipeline,2022-Q3,center,4.494,2
+pipeline,2022-Q3,right,1.448,6
+pipeline,2022-Q4,left,0.0,1
+pipeline,2022-Q4,center,0.0,1
+pipeline,2022-Q4,right,0.301,6
+pipeline,2023-Q1,left,0.534,3
+pipeline,2023-Q1,center,1.562,2
+pipeline,2023-Q1,right,0.479,12
+pipeline,2023-Q2,left,0.889,3
+pipeline,2023-Q2,center,1.224,3
+pipeline,2023-Q2,right,0.095,12
+pipeline,2023-Q3,left,0.222,3
+pipeline,2023-Q3,center,0.0,3
+pipeline,2023-Q3,right,0.761,12
+pipeline,2023-Q4,left,1.0,2
+pipeline,2023-Q4,center,0.222,3
+pipeline,2023-Q4,right,1.244,12
+pipeline,2024-Q1,left,1.667,2
+pipeline,2024-Q1,center,0.681,3
+pipeline,2024-Q1,right,0.545,10
+pipeline,2024-Q2,left,1.0,2
+pipeline,2024-Q2,center,1.317,3
+pipeline,2024-Q2,right,0.988,10
+pipeline,2024-Q3,left,1.0,2
+pipeline,2024-Q3,center,0.222,3
+pipeline,2024-Q3,right,0.536,9
+pipeline,2024-Q4,left,0.0,2
+pipeline,2024-Q4,center,0.604,3
+pipeline,2024-Q4,right,0.764,10
+pipeline,2025-Q1,left,2.0,2
+pipeline,2025-Q1,center,1.965,3
+pipeline,2025-Q1,right,1.991,8
+pipeline,2025-Q2,left,2.0,2
+pipeline,2025-Q2,center,3.543,3
+pipeline,2025-Q2,right,1.55,6
+pipeline,2025-Q3,left,1.667,2
+pipeline,2025-Q3,center,0.991,3
+pipeline,2025-Q3,right,2.673,4
+pipeline,2025-Q4,left,6.667,2
+pipeline,2025-Q4,center,15.113,3
+pipeline,2025-Q4,right,9.075,7
+pipeline,2026-Q1,left,1.0,2
+pipeline,2026-Q1,center,3.348,3
+pipeline,2026-Q1,right,3.307,6
+pipeline,2026-Q2,left,2.667,2
+pipeline,2026-Q2,center,3.846,3
+pipeline,2026-Q2,right,2.888,6
+pipeline,2026-Q3,left,3.333,2
+pipeline,2026-Q3,center,3.918,2
+pipeline,2026-Q3,right,12.814,5
+pipeline,2026-Q4,left,5.836,2
+pipeline,2026-Q4,center,12.5,1
+net zero,2019-Q3,left,0.0,1
+net zero,2019-Q4,left,0.222,3
+net zero,2019-Q4,center,0.0,3
+net zero,2019-Q4,right,0.242,12
+net zero,2020-Q1,left,0.0,3
+net zero,2020-Q1,center,0.0,3
+net zero,2020-Q1,right,0.0,10
+net zero,2020-Q2,left,0.0,3
+net zero,2020-Q2,center,0.0,3
+net zero,2020-Q2,right,0.0,10
+net zero,2020-Q3,left,0.0,3
+net zero,2020-Q3,center,0.0,3
+net zero,2020-Q3,right,0.0,13
+net zero,2020-Q4,left,0.0,2
+net zero,2020-Q4,center,0.0,3
+net zero,2020-Q4,right,0.0,13
+net zero,2021-Q1,left,0.0,1
+net zero,2021-Q1,center,0.0,3
+net zero,2021-Q1,right,0.0,12
+net zero,2021-Q2,left,0.0,1
+net zero,2021-Q2,center,0.444,3
+net zero,2021-Q2,right,0.213,12
+net zero,2021-Q3,left,0.0,1
+net zero,2021-Q3,center,0.0,2
+net zero,2021-Q3,right,0.0,11
+net zero,2021-Q4,left,0.0,1
+net zero,2021-Q4,center,0.0,2
+net zero,2021-Q4,right,0.0,9
+net zero,2022-Q1,left,0.0,1
+net zero,2022-Q1,center,0.0,2
+net zero,2022-Q1,right,0.202,10
+net zero,2022-Q2,left,0.0,1
+net zero,2022-Q2,center,0.0,2
+net zero,2022-Q2,right,0.0,10
+net zero,2022-Q3,left,0.0,1
+net zero,2022-Q3,center,0.0,2
+net zero,2022-Q3,right,0.0,6
+net zero,2022-Q4,left,0.0,1
+net zero,2022-Q4,center,0.0,1
+net zero,2022-Q4,right,0.0,6
+net zero,2023-Q1,left,1.004,3
+net zero,2023-Q1,center,0.0,2
+net zero,2023-Q1,right,0.271,12
+net zero,2023-Q2,left,0.0,3
+net zero,2023-Q2,center,0.834,3
+net zero,2023-Q2,right,0.316,12
+net zero,2023-Q3,left,0.0,3
+net zero,2023-Q3,center,0.0,3
+net zero,2023-Q3,right,0.578,12
+net zero,2023-Q4,left,0.0,2
+net zero,2023-Q4,center,0.0,3
+net zero,2023-Q4,right,0.439,12
+net zero,2024-Q1,left,0.0,2
+net zero,2024-Q1,center,0.563,3
+net zero,2024-Q1,right,0.133,10
+net zero,2024-Q2,left,0.0,2
+net zero,2024-Q2,center,0.0,3
+net zero,2024-Q2,right,0.292,10
+net zero,2024-Q3,left,0.0,2
+net zero,2024-Q3,center,0.0,3
+net zero,2024-Q3,right,0.0,9
+net zero,2024-Q4,left,0.0,2
+net zero,2024-Q4,center,0.0,3
+net zero,2024-Q4,right,0.0,10
+net zero,2025-Q1,left,0.0,2
+net zero,2025-Q1,center,0.0,3
+net zero,2025-Q1,right,0.0,8
+net zero,2025-Q2,left,0.0,2
+net zero,2025-Q2,center,0.0,3
+net zero,2025-Q2,right,0.0,6
+net zero,2025-Q3,left,0.0,2
+net zero,2025-Q3,center,0.0,3
+net zero,2025-Q3,right,0.0,4
+net zero,2025-Q4,left,0.0,2
+net zero,2025-Q4,center,0.0,3
+net zero,2025-Q4,right,0.0,7
+net zero,2026-Q1,left,0.0,2
+net zero,2026-Q1,center,0.0,3
+net zero,2026-Q1,right,0.0,6
+net zero,2026-Q2,left,0.0,2
+net zero,2026-Q2,center,0.0,3
+net zero,2026-Q2,right,0.0,6
+net zero,2026-Q3,left,0.0,2
+net zero,2026-Q3,center,0.0,2
+net zero,2026-Q3,right,0.0,5
+net zero,2026-Q4,left,0.0,2
+net zero,2026-Q4,center,0.0,1
+liberal,2019-Q3,left,10.667,1
+liberal,2019-Q4,left,10.927,3
+liberal,2019-Q4,center,12.072,3
+liberal,2019-Q4,right,9.442,12
+liberal,2020-Q1,left,4.0,3
+liberal,2020-Q1,center,5.463,3
+liberal,2020-Q1,right,3.718,10
+liberal,2020-Q2,left,1.111,3
+liberal,2020-Q2,center,2.42,3
+liberal,2020-Q2,right,1.863,10
+liberal,2020-Q3,left,2.889,3
+liberal,2020-Q3,center,7.651,3
+liberal,2020-Q3,right,2.645,13
+liberal,2020-Q4,left,2.667,2
+liberal,2020-Q4,center,10.529,3
+liberal,2020-Q4,right,5.613,13
+liberal,2021-Q1,left,4.667,1
+liberal,2021-Q1,center,12.474,3
+liberal,2021-Q1,right,1.625,12
+liberal,2021-Q2,left,4.667,1
+liberal,2021-Q2,center,10.094,3
+liberal,2021-Q2,right,3.511,12
+liberal,2021-Q3,left,6.0,1
+liberal,2021-Q3,center,19.201,2
+liberal,2021-Q3,right,6.688,11
+liberal,2021-Q4,left,1.333,1
+liberal,2021-Q4,center,8.124,2
+liberal,2021-Q4,right,2.044,9
+liberal,2022-Q1,left,1.333,1
+liberal,2022-Q1,center,4.608,2
+liberal,2022-Q1,right,3.446,10
+liberal,2022-Q2,left,3.333,1
+liberal,2022-Q2,center,4.172,2
+liberal,2022-Q2,right,7.547,10
+liberal,2022-Q3,left,3.333,1
+liberal,2022-Q3,center,4.484,2
+liberal,2022-Q3,right,1.73,6
+liberal,2022-Q4,left,2.0,1
+liberal,2022-Q4,center,5.247,1
+liberal,2022-Q4,right,3.701,6
+liberal,2023-Q1,left,4.028,3
+liberal,2023-Q1,center,10.717,2
+liberal,2023-Q1,right,5.73,12
+liberal,2023-Q2,left,1.778,3
+liberal,2023-Q2,center,13.864,3
+liberal,2023-Q2,right,4.533,12
+liberal,2023-Q3,left,4.057,3
+liberal,2023-Q3,center,8.163,3
+liberal,2023-Q3,right,5.525,12
+liberal,2023-Q4,left,1.667,2
+liberal,2023-Q4,center,15.576,3
+liberal,2023-Q4,right,5.731,12
+liberal,2024-Q1,left,1.0,2
+liberal,2024-Q1,center,13.773,3
+liberal,2024-Q1,right,3.205,10
+liberal,2024-Q2,left,3.0,2
+liberal,2024-Q2,center,13.08,3
+liberal,2024-Q2,right,5.338,10
+liberal,2024-Q3,left,3.333,2
+liberal,2024-Q3,center,23.448,3
+liberal,2024-Q3,right,6.502,9
+liberal,2024-Q4,left,5.333,2
+liberal,2024-Q4,center,21.69,3
+liberal,2024-Q4,right,12.443,10
+liberal,2025-Q1,left,10.667,2
+liberal,2025-Q1,center,82.614,3
+liberal,2025-Q1,right,20.547,8
+liberal,2025-Q2,left,8.0,2
+liberal,2025-Q2,center,16.899,3
+liberal,2025-Q2,right,16.923,6
+liberal,2025-Q3,left,2.333,2
+liberal,2025-Q3,center,4.027,3
+liberal,2025-Q3,right,6.241,4
+liberal,2025-Q4,left,4.0,2
+liberal,2025-Q4,center,14.158,3
+liberal,2025-Q4,right,7.535,7
+liberal,2026-Q1,left,3.333,2
+liberal,2026-Q1,center,8.068,3
+liberal,2026-Q1,right,8.315,6
+liberal,2026-Q2,left,3.0,2
+liberal,2026-Q2,center,12.537,3
+liberal,2026-Q2,right,10.279,6
+liberal,2026-Q3,left,2.333,2
+liberal,2026-Q3,center,5.959,2
+liberal,2026-Q3,right,5.279,5
+liberal,2026-Q4,left,2.542,2
+liberal,2026-Q4,center,9.375,1
+conservative,2019-Q3,left,1.333,1
+conservative,2019-Q4,left,9.769,3
+conservative,2019-Q4,center,17.348,3
+conservative,2019-Q4,right,3.813,12
+conservative,2020-Q1,left,3.556,3
+conservative,2020-Q1,center,18.975,3
+conservative,2020-Q1,right,5.691,10
+conservative,2020-Q2,left,1.333,3
+conservative,2020-Q2,center,13.265,3
+conservative,2020-Q2,right,2.289,10
+conservative,2020-Q3,left,2.444,3
+conservative,2020-Q3,center,20.223,3
+conservative,2020-Q3,right,3.36,13
+conservative,2020-Q4,left,1.333,2
+conservative,2020-Q4,center,8.497,3
+conservative,2020-Q4,right,1.619,13
+conservative,2021-Q1,left,0.0,1
+conservative,2021-Q1,center,9.757,3
+conservative,2021-Q1,right,0.942,12
+conservative,2021-Q2,left,0.0,1
+conservative,2021-Q2,center,4.932,3
+conservative,2021-Q2,right,1.872,12
+conservative,2021-Q3,left,3.333,1
+conservative,2021-Q3,center,14.522,2
+conservative,2021-Q3,right,2.89,11
+conservative,2021-Q4,left,2.0,1
+conservative,2021-Q4,center,12.325,2
+conservative,2021-Q4,right,1.549,9
+conservative,2022-Q1,left,3.333,1
+conservative,2022-Q1,center,23.882,2
+conservative,2022-Q1,right,7.346,10
+conservative,2022-Q2,left,2.0,1
+conservative,2022-Q2,center,38.497,2
+conservative,2022-Q2,right,3.768,10
+conservative,2022-Q3,left,1.333,1
+conservative,2022-Q3,center,30.879,2
+conservative,2022-Q3,right,5.764,6
+conservative,2022-Q4,left,0.0,1
+conservative,2022-Q4,center,2.099,1
+conservative,2022-Q4,right,3.117,6
+conservative,2023-Q1,left,2.695,3
+conservative,2023-Q1,center,9.982,2
+conservative,2023-Q1,right,2.489,12
+conservative,2023-Q2,left,1.556,3
+conservative,2023-Q2,center,5.693,3
+conservative,2023-Q2,right,1.161,12
+conservative,2023-Q3,left,0.444,3
+conservative,2023-Q3,center,9.664,3
+conservative,2023-Q3,right,0.968,12
+conservative,2023-Q4,left,0.667,2
+conservative,2023-Q4,center,5.406,3
+conservative,2023-Q4,right,2.176,12
+conservative,2024-Q1,left,0.333,2
+conservative,2024-Q1,center,5.356,3
+conservative,2024-Q1,right,1.147,10
+conservative,2024-Q2,left,1.0,2
+conservative,2024-Q2,center,8.297,3
+conservative,2024-Q2,right,2.079,10
+conservative,2024-Q3,left,1.0,2
+conservative,2024-Q3,center,8.147,3
+conservative,2024-Q3,right,2.052,9
+conservative,2024-Q4,left,3.333,2
+conservative,2024-Q4,center,4.68,3
+conservative,2024-Q4,right,2.49,10
+conservative,2025-Q1,left,3.0,2
+conservative,2025-Q1,center,7.389,3
+conservative,2025-Q1,right,2.051,8
+conservative,2025-Q2,left,4.0,2
+conservative,2025-Q2,center,17.858,3
+conservative,2025-Q2,right,14.738,6
+conservative,2025-Q3,left,1.667,2
+conservative,2025-Q3,center,6.768,3
+conservative,2025-Q3,right,4.867,4
+conservative,2025-Q4,left,2.667,2
+conservative,2025-Q4,center,11.443,3
+conservative,2025-Q4,right,4.37,7
+conservative,2026-Q1,left,1.667,2
+conservative,2026-Q1,center,9.663,3
+conservative,2026-Q1,right,3.549,6
+conservative,2026-Q2,left,2.333,2
+conservative,2026-Q2,center,7.74,3
+conservative,2026-Q2,right,4.236,6
+conservative,2026-Q3,left,7.333,2
+conservative,2026-Q3,center,14.15,2
+conservative,2026-Q3,right,5.182,5
+conservative,2026-Q4,left,3.751,2
+conservative,2026-Q4,center,15.625,1
+trudeau,2019-Q3,left,23.333,1
+trudeau,2019-Q4,left,49.94,3
+trudeau,2019-Q4,center,48.805,3
+trudeau,2019-Q4,right,21.595,12
+trudeau,2020-Q1,left,12.0,3
+trudeau,2020-Q1,center,44.51,3
+trudeau,2020-Q1,right,13.05,10
+trudeau,2020-Q2,left,13.111,3
+trudeau,2020-Q2,center,68.644,3
+trudeau,2020-Q2,right,15.834,10
+trudeau,2020-Q3,left,9.556,3
+trudeau,2020-Q3,center,51.272,3
+trudeau,2020-Q3,right,18.711,13
+trudeau,2020-Q4,left,2.333,2
+trudeau,2020-Q4,center,41.011,3
+trudeau,2020-Q4,right,19.299,13
+trudeau,2021-Q1,left,3.333,1
+trudeau,2021-Q1,center,35.486,3
+trudeau,2021-Q1,right,11.389,12
+trudeau,2021-Q2,left,2.0,1
+trudeau,2021-Q2,center,43.789,3
+trudeau,2021-Q2,right,14.532,12
+trudeau,2021-Q3,left,5.333,1
+trudeau,2021-Q3,center,67.627,2
+trudeau,2021-Q3,right,18.91,11
+trudeau,2021-Q4,left,6.667,1
+trudeau,2021-Q4,center,48.708,2
+trudeau,2021-Q4,right,15.356,9
+trudeau,2022-Q1,left,4.0,1
+trudeau,2022-Q1,center,47.647,2
+trudeau,2022-Q1,right,24.224,10
+trudeau,2022-Q2,left,3.333,1
+trudeau,2022-Q2,center,42.164,2
+trudeau,2022-Q2,right,22.227,10
+trudeau,2022-Q3,left,3.333,1
+trudeau,2022-Q3,center,37.049,2
+trudeau,2022-Q3,right,15.448,6
+trudeau,2022-Q4,left,4.667,1
+trudeau,2022-Q4,center,86.044,1
+trudeau,2022-Q4,right,16.904,6
+trudeau,2023-Q1,left,15.257,3
+trudeau,2023-Q1,center,100.664,2
+trudeau,2023-Q1,right,24.596,12
+trudeau,2023-Q2,left,10.444,3
+trudeau,2023-Q2,center,66.079,3
+trudeau,2023-Q2,right,16.955,12
+trudeau,2023-Q3,left,8.357,3
+trudeau,2023-Q3,center,73.096,3
+trudeau,2023-Q3,right,20.784,12
+trudeau,2023-Q4,left,6.333,2
+trudeau,2023-Q4,center,43.217,3
+trudeau,2023-Q4,right,22.367,12
+trudeau,2024-Q1,left,5.0,2
+trudeau,2024-Q1,center,61.601,3
+trudeau,2024-Q1,right,21.971,10
+trudeau,2024-Q2,left,5.333,2
+trudeau,2024-Q2,center,61.894,3
+trudeau,2024-Q2,right,22.25,10
+trudeau,2024-Q3,left,6.333,2
+trudeau,2024-Q3,center,61.609,3
+trudeau,2024-Q3,right,23.851,9
+trudeau,2024-Q4,left,12.667,2
+trudeau,2024-Q4,center,102.193,3
+trudeau,2024-Q4,right,54.944,10
+trudeau,2025-Q1,left,12.0,2
+trudeau,2025-Q1,center,69.197,3
+trudeau,2025-Q1,right,46.687,8
+trudeau,2025-Q2,left,0.667,2
+trudeau,2025-Q2,center,3.68,3
+trudeau,2025-Q2,right,6.862,6
+trudeau,2025-Q3,left,1.0,2
+trudeau,2025-Q3,center,0.829,3
+trudeau,2025-Q3,right,4.553,4
+trudeau,2025-Q4,left,1.333,2
+trudeau,2025-Q4,center,5.115,3
+trudeau,2025-Q4,right,5.649,7
+trudeau,2026-Q1,left,0.333,2
+trudeau,2026-Q1,center,2.973,3
+trudeau,2026-Q1,right,6.219,6
+trudeau,2026-Q2,left,1.0,2
+trudeau,2026-Q2,center,2.272,3
+trudeau,2026-Q2,right,4.499,6
+trudeau,2026-Q3,left,0.0,2
+trudeau,2026-Q3,center,1.0,2
+trudeau,2026-Q3,right,3.392,5
+trudeau,2026-Q4,left,0.667,2
+trudeau,2026-Q4,center,0.0,1
+carney,2019-Q3,left,0.0,1
+carney,2019-Q4,left,0.0,3
+carney,2019-Q4,center,0.0,3
+carney,2019-Q4,right,0.0,12
+carney,2020-Q1,left,0.0,3
+carney,2020-Q1,center,0.0,3
+carney,2020-Q1,right,0.0,10
+carney,2020-Q2,left,0.0,3
+carney,2020-Q2,center,0.0,3
+carney,2020-Q2,right,0.0,10
+carney,2020-Q3,left,0.0,3
+carney,2020-Q3,center,1.518,3
+carney,2020-Q3,right,0.206,13
+carney,2020-Q4,left,0.0,2
+carney,2020-Q4,center,0.0,3
+carney,2020-Q4,right,0.0,13
+carney,2021-Q1,left,0.0,1
+carney,2021-Q1,center,0.0,3
+carney,2021-Q1,right,0.0,12
+carney,2021-Q2,left,0.0,1
+carney,2021-Q2,center,1.785,3
+carney,2021-Q2,right,0.142,12
+carney,2021-Q3,left,0.667,1
+carney,2021-Q3,center,1.538,2
+carney,2021-Q3,right,0.0,11
+carney,2021-Q4,left,0.0,1
+carney,2021-Q4,center,0.0,2
+carney,2021-Q4,right,0.0,9
+carney,2022-Q1,left,0.0,1
+carney,2022-Q1,center,0.0,2
+carney,2022-Q1,right,0.0,10
+carney,2022-Q2,left,0.0,1
+carney,2022-Q2,center,0.0,2
+carney,2022-Q2,right,0.0,10
+carney,2022-Q3,left,0.0,1
+carney,2022-Q3,center,0.0,2
+carney,2022-Q3,right,0.0,6
+carney,2022-Q4,left,0.667,1
+carney,2022-Q4,center,1.049,1
+carney,2022-Q4,right,0.433,6
+carney,2023-Q1,left,0.0,3
+carney,2023-Q1,center,0.0,2
+carney,2023-Q1,right,0.0,12
+carney,2023-Q2,left,0.0,3
+carney,2023-Q2,center,1.17,3
+carney,2023-Q2,right,0.0,12
+carney,2023-Q3,left,0.0,3
+carney,2023-Q3,center,1.338,3
+carney,2023-Q3,right,0.238,12
+carney,2023-Q4,left,0.0,2
+carney,2023-Q4,center,1.496,3
+carney,2023-Q4,right,0.195,12
+carney,2024-Q1,left,0.0,2
+carney,2024-Q1,center,0.557,3
+carney,2024-Q1,right,0.171,10
+carney,2024-Q2,left,0.0,2
+carney,2024-Q2,center,1.467,3
+carney,2024-Q2,right,0.526,10
+carney,2024-Q3,left,1.0,2
+carney,2024-Q3,center,4.903,3
+carney,2024-Q3,right,1.508,9
+carney,2024-Q4,left,0.0,2
+carney,2024-Q4,center,2.702,3
+carney,2024-Q4,right,1.132,10
+carney,2025-Q1,left,15.667,2
+carney,2025-Q1,center,69.348,3
+carney,2025-Q1,right,45.836,8
+carney,2025-Q2,left,23.667,2
+carney,2025-Q2,center,111.517,3
+carney,2025-Q2,right,92.619,6
+carney,2025-Q3,left,16.667,2
+carney,2025-Q3,center,82.144,3
+carney,2025-Q3,right,74.567,4
+carney,2025-Q4,left,19.333,2
+carney,2025-Q4,center,85.602,3
+carney,2025-Q4,right,51.098,7
+carney,2026-Q1,left,15.667,2
+carney,2026-Q1,center,96.404,3
+carney,2026-Q1,right,52.986,6
+carney,2026-Q2,left,18.667,2
+carney,2026-Q2,center,77.102,3
+carney,2026-Q2,right,57.192,6
+carney,2026-Q3,left,15.0,2
+carney,2026-Q3,center,63.827,2
+carney,2026-Q3,right,52.688,5
+carney,2026-Q4,left,13.508,2
+carney,2026-Q4,center,56.25,1
+poilievre,2019-Q3,left,0.0,1
+poilievre,2019-Q4,left,0.222,3
+poilievre,2019-Q4,center,0.866,3
+poilievre,2019-Q4,right,0.0,12
+poilievre,2020-Q1,left,0.667,3
+poilievre,2020-Q1,center,1.954,3
+poilievre,2020-Q1,right,0.336,10
+poilievre,2020-Q2,left,0.0,3
+poilievre,2020-Q2,center,0.0,3
+poilievre,2020-Q2,right,0.0,10
+poilievre,2020-Q3,left,0.0,3
+poilievre,2020-Q3,center,0.0,3
+poilievre,2020-Q3,right,0.408,13
+poilievre,2020-Q4,left,0.0,2
+poilievre,2020-Q4,center,0.0,3
+poilievre,2020-Q4,right,0.0,13
+poilievre,2021-Q1,left,0.0,1
+poilievre,2021-Q1,center,0.0,3
+poilievre,2021-Q1,right,0.0,12
+poilievre,2021-Q2,left,0.0,1
+poilievre,2021-Q2,center,0.0,3
+poilievre,2021-Q2,right,0.0,12
+poilievre,2021-Q3,left,0.0,1
+poilievre,2021-Q3,center,0.0,2
+poilievre,2021-Q3,right,0.515,11
+poilievre,2021-Q4,left,0.0,1
+poilievre,2021-Q4,center,0.0,2
+poilievre,2021-Q4,right,0.0,9
+poilievre,2022-Q1,left,0.667,1
+poilievre,2022-Q1,center,2.294,2
+poilievre,2022-Q1,right,2.425,10
+poilievre,2022-Q2,left,0.667,1
+poilievre,2022-Q2,center,17.115,2
+poilievre,2022-Q2,right,6.107,10
+poilievre,2022-Q3,left,2.667,1
+poilievre,2022-Q3,center,17.958,2
+poilievre,2022-Q3,right,8.774,6
+poilievre,2022-Q4,left,0.0,1
+poilievre,2022-Q4,center,19.937,1
+poilievre,2022-Q4,right,3.99,6
+poilievre,2023-Q1,left,1.226,3
+poilievre,2023-Q1,center,20.414,2
+poilievre,2023-Q1,right,3.475,12
+poilievre,2023-Q2,left,2.667,3
+poilievre,2023-Q2,center,19.047,3
+poilievre,2023-Q2,right,3.951,12
+poilievre,2023-Q3,left,2.645,3
+poilievre,2023-Q3,center,24.763,3
+poilievre,2023-Q3,right,5.747,12
+poilievre,2023-Q4,left,1.333,2
+poilievre,2023-Q4,center,18.291,3
+poilievre,2023-Q4,right,3.877,12
+poilievre,2024-Q1,left,2.333,2
+poilievre,2024-Q1,center,27.188,3
+poilievre,2024-Q1,right,4.647,10
+poilievre,2024-Q2,left,3.333,2
+poilievre,2024-Q2,center,24.864,3
+poilievre,2024-Q2,right,5.401,10
+poilievre,2024-Q3,left,3.0,2
+poilievre,2024-Q3,center,22.649,3
+poilievre,2024-Q3,right,5.838,9
+poilievre,2024-Q4,left,2.0,2
+poilievre,2024-Q4,center,18.927,3
+poilievre,2024-Q4,right,9.635,10
+poilievre,2025-Q1,left,3.0,2
+poilievre,2025-Q1,center,23.683,3
+poilievre,2025-Q1,right,18.563,8
+poilievre,2025-Q2,left,11.0,2
+poilievre,2025-Q2,center,43.146,3
+poilievre,2025-Q2,right,31.294,6
+poilievre,2025-Q3,left,6.0,2
+poilievre,2025-Q3,center,22.809,3
+poilievre,2025-Q3,right,14.75,4
+poilievre,2025-Q4,left,3.667,2
+poilievre,2025-Q4,center,14.476,3
+poilievre,2025-Q4,right,8.335,7
+poilievre,2026-Q1,left,3.0,2
+poilievre,2026-Q1,center,20.604,3
+poilievre,2026-Q1,right,14.243,6
+poilievre,2026-Q2,left,2.667,2
+poilievre,2026-Q2,center,15.628,3
+poilievre,2026-Q2,right,9.883,6
+poilievre,2026-Q3,left,1.667,2
+poilievre,2026-Q3,center,10.857,2
+poilievre,2026-Q3,right,4.702,5
+poilievre,2026-Q4,left,1.0,2
+poilievre,2026-Q4,center,9.375,1
