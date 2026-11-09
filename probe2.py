@@ -1,5 +1,3 @@
-"""One-scan GDELT domain probe.  python probe2.py [--month YYYY-MM] word word ...
-Prints the words it received, the dry-run size, asks to continue, then lists matching domains per word."""
 import re, sys
 from google.cloud import bigquery
 
