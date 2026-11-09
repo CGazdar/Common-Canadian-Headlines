@@ -139,6 +139,7 @@ main.wide{max-width:1180px}
 .opt{display:flex;align-items:center;gap:8px;padding:3px 4px;border-radius:5px;font-size:14px;cursor:pointer}
 .opt:hover{background:var(--nodata)}
 .opt input{margin:0}
+.opt.year .n{display:none}
 .opt .n{margin-left:auto;color:var(--mute);font-size:12px;font-variant-numeric:tabular-nums}
 .opt.zero{opacity:.45}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;flex:none}
@@ -183,6 +184,7 @@ mark{background:color-mix(in srgb,var(--right) 28%,transparent);color:inherit;bo
 <p class="sub" id="sub">The latest headlines behind the numbers, newest first. Each one links to the publisher's own page.</p>
 <div class="hl">
   <aside class="hl-side" id="side" aria-label="Filters">
+    <fieldset><legend>Year</legend><div id="fy"></div></fieldset>
     <fieldset><legend>Leaning</legend><div id="fl"></div></fieldset>
     <fieldset><legend>Province</legend><div id="fp"></div></fieldset>
     <fieldset><legend>Term</legend>
@@ -238,15 +240,19 @@ const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
 const termRe=t=>new RegExp("(?<![\\p{L}\\p{N}])"+reEsc(t)+"(?![\\p{L}\\p{N}])","iu");
 const gcol=g=>(GROUPS.find(x=>x[0]===g)||[0,0,"var(--center)"])[2];
 
-const rows=R.rows.filter(r=>D.outlets[r[0]]).map(r=>({o:r[0],d:r[1],h:r[2],u:r[3],en:r[4]||"",g:D.outlets[r[0]].group,p:prov(r[0])}));
-const outs=[...new Set(rows.map(r=>r.o))].sort((a,b)=>D.outlets[a].name.localeCompare(D.outlets[b].name));
-const provs=PORDER.filter(p=>rows.some(r=>r.p===p));
+const mapRows=a=>a.filter(r=>D.outlets[r[0]]).map(r=>({o:r[0],d:r[1],h:r[2],u:r[3],en:r[4]||"",g:D.outlets[r[0]].group,p:prov(r[0])}));
+const outs=Object.keys(D.outlets).sort((a,b)=>D.outlets[a].name.localeCompare(D.outlets[b].name));
+const provs=PORDER.filter(p=>outs.some(o=>prov(o)===p));
+const YEARS=(R.years||[]).map(String);
+const cacheY={latest:mapRows(R.rows)};
+let rows=cacheY.latest;
 
-const st={g:new Set(),p:new Set(),o:new Set(),t:[],q:"",shown:PAGE};
+const st={g:new Set(),p:new Set(),o:new Set(),t:[],q:"",shown:PAGE,y:"latest"};
 const qs=new URLSearchParams(location.search);
 (qs.get("g")||"").split(",").forEach(x=>GROUPS.some(g=>g[0]===x)&&st.g.add(x));
 (qs.get("p")||"").split(",").forEach(x=>provs.includes(x)&&st.p.add(x));
 (qs.get("o")||"").split(",").forEach(x=>outs.includes(x)&&st.o.add(x));
+if(YEARS.includes(qs.get("y")))st.y=qs.get("y");
 st.t=(qs.get("t")||"").split(",").map(x=>x.trim().toLowerCase()).filter(Boolean);
 
 D.terms.slice().sort().forEach(t=>{const o=document.createElement("option");o.value=t;$("tlist").appendChild(o)});
@@ -270,7 +276,14 @@ function opt(kind,val,label,n,dotcol,checked){
   const c=document.createElement("span");c.className="n";c.textContent=n.toLocaleString();l.appendChild(c);
   return l;
 }
+function yopt(val,label){
+  const l=document.createElement("label");l.className="opt year";
+  const i=document.createElement("input");i.type="radio";i.name="y";i.checked=st.y===val;
+  i.addEventListener("change",()=>{st.y=val;st.shown=PAGE;setYear()});
+  l.appendChild(i);const t=document.createElement("span");t.textContent=label;l.appendChild(t);return l;
+}
 function drawFilters(){
+  $("fy").replaceChildren(yopt("latest","Latest"),...YEARS.map(y=>yopt(y,y)));
   const cg=tally("g","g"),cp=tally("p","p"),co=tally("o","o");
   $("fl").replaceChildren(...GROUPS.map(([v,l,c])=>opt("g",v,l,cg[v]||0,c,st.g.has(v))));
   $("fp").replaceChildren(...provs.map(p=>opt("p",p,NAMES[p],cp[p]||0,null,st.p.has(p))));
@@ -318,10 +331,28 @@ function drawFeed(){
 function sync(){
   const p=new URLSearchParams();
   if(st.g.size)p.set("g",[...st.g].join(","));if(st.p.size)p.set("p",[...st.p].join(","));
-  if(st.o.size)p.set("o",[...st.o].join(","));if(st.t.length)p.set("t",st.t.join(","));
+  if(st.o.size)p.set("o",[...st.o].join(","));if(st.t.length)p.set("t",st.t.join(","));if(st.y!=="latest")p.set("y",st.y);
   try{history.replaceState(null,"",p.toString()?"?"+p:location.pathname)}catch(e){}
 }
-function render(){termRes=st.t.map(termRe);drawFilters();drawFeed();sync()}
+function render(){termRes=st.t.map(termRe);drawFilters();drawFeed();sync();drawNote()}
+let ytok=0;
+async function setYear(){
+  const mine=++ytok,y=st.y;
+  if(!cacheY[y]){
+    $("count").textContent="Loading "+y+"…";
+    try{const r=await fetch("headlines/"+y+".json");if(!r.ok)throw 0;cacheY[y]=mapRows((await r.json()).rows)}
+    catch(e){if(mine!==ytok)return;$("feed").innerHTML='<li class="hl-empty">Could not load the headlines for '+y+'. Run export_recent.py and push docs/headlines/.</li>';$("more").hidden=true;return}
+  }
+  if(mine!==ytok)return;
+  rows=cacheY[y];render();
+}
+function drawNote(){
+  const newest=rows.reduce((m,r)=>r.d>m?r.d:m,"");
+  const tail=" Syndicated copies and dead links are left out. French headlines are shown in the original with a machine translation. Within a filter, selections are combined with “or”; between filters, with “and”.";
+  $("note").textContent=st.y==="latest"
+    ? "Showing the most recent headlines for each outlet, from the same sections used for the term counts"+(newest?" (newest: "+fmtDay(newest)+")":"")+"."+tail
+    : "Showing a random sample of up to "+(R.perYear||40)+" headlines per outlet from "+st.y+", from the same sections used for the term counts, so it is a cross-section of the year and not every headline."+tail;
+}
 function addTerm(){
   const v=$("tin").value.trim().toLowerCase();$("tin").value="";
   if(v&&!st.t.includes(v)){st.t.push(v);st.shown=PAGE;render()}
@@ -332,10 +363,8 @@ $("osearch").addEventListener("input",e=>{st.q=e.target.value;drawFilters()});
 $("more").addEventListener("click",()=>{st.shown+=PAGE;drawFeed()});
 $("reset").addEventListener("click",()=>{st.g.clear();st.p.clear();st.o.clear();st.t=[];st.shown=PAGE;render()});
 $("fbtn").addEventListener("click",()=>$("side").classList.toggle("open"));
-const newest=rows.reduce((m,r)=>r.d>m?r.d:m,"");
-$("sub").textContent="The latest headlines behind the numbers, newest first, from "+outs.length+" outlets. Each one links to the publisher's own page.";
-$("note").textContent="Showing the most recent "+Math.round(rows.length/outs.length)+" or so headlines per outlet, from the same sections used for the term counts"+(newest?" (newest: "+fmtDay(newest)+")":"")+". Syndicated copies and dead links are left out. French headlines are shown in the original with a machine translation. Within a filter, selections are combined with “or”; between filters, with “and”.";
-render();
+$("sub").textContent="Headlines behind the numbers, newest first, from "+outs.length+" outlets. Each one links to the publisher's own page.";
+st.y==="latest"?render():setYear();
 })();
 </script>
 </body>
